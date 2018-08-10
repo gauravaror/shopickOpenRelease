@@ -1,0 +1,2 @@
+module PostCollectionHelper
+end

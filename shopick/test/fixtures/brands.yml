@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  brand_name: MyString
+  brand_logo: MyString
+  brand_name_mapped: MyString
+  brand_line: MyString
+
+two:
+  brand_name: MyString
+  brand_logo: MyString
+  brand_name_mapped: MyString
+  brand_line: MyString

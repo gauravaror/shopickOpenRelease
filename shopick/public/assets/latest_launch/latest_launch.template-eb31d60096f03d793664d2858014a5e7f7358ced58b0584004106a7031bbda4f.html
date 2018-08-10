@@ -1,0 +1,19 @@
+  <div ng-controller="LatestLaunchCtrl" >
+    <md-content  layout="column">
+
+      <md-virtual-repeat-container class= "collection_container" id="vertical-container">
+      <md-subheader class="md-primary md-accent">Latest Launch</md-subheader>
+        <div md-virtual-repeat="update in brand_updates" >
+           <md-card ng-click=openUpdate(update.id)>
+              <img src={{update.image_url}}/>
+              <md-card-title class="latestlaunchtitle">
+                <md-card-title-text>
+                  <span class="md-headline"> {{update.brand_name}}</span>
+                  <span class="md-subhead"> {{update.title}}</span>
+                </md-card-title-text>
+              </md-card-title>
+            </md-card>
+        </div>
+      </md-virtual-repeat-container>
+    </md-content>
+</div>

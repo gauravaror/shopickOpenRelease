@@ -1,0 +1,552 @@
+.html_complete {
+  background: #1B0E31;
+}
+
+.body_complete {
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.03) 50%, rgba(0, 0, 0, 0.7) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sign {
+  box-sizing: border-box;
+  min-width: 90vh;
+  min-height: 90vh;
+  border: 1.2vh solid #B7D7F7;
+  border-radius: 50%;
+  transform: rotate(-60deg);
+  box-shadow: 0 0 3.6vh dodgerblue, inset 0 0 3.6vh dodgerblue;
+}
+.sign h1 {
+  margin: 0;
+  position: absolute;
+  left: 45vh;
+  top: 0;
+}
+.sign h1 span {
+  box-sizing: border-box;
+  height: 45vh;
+  width: 9vh;
+  padding-top: 3.6vh;
+  color: #FBA7C3;
+  font: 11.25vh "Hello Denver";
+  text-align: center;
+  text-shadow: 0 0 1.8vh #EF7CA3, 0 0 3vh #E91E63;
+  text-transform: uppercase;
+  position: absolute;
+  left: -5.7vh;
+  top: -1.2vh;
+  transform-origin: bottom center;
+}
+.sign h1 span:nth-child(1) {
+  transform: rotate(10deg);
+}
+.sign h1 span:nth-child(2) {
+  transform: rotate(20deg);
+}
+.sign h1 span:nth-child(3) {
+  transform: rotate(30deg);
+}
+.sign h1 span:nth-child(4) {
+  transform: rotate(40deg);
+}
+.sign h1 span:nth-child(5) {
+  transform: rotate(50deg);
+}
+.sign h1 span:nth-child(6) {
+  transform: rotate(60deg);
+}
+.sign h1 span:nth-child(7) {
+  transform: rotate(70deg);
+}
+.sign h1 span:nth-child(8) {
+  transform: rotate(80deg);
+}
+.sign h1 span:nth-child(9) {
+  transform: rotate(90deg);
+}
+.sign h1 span:nth-child(10) {
+  transform: rotate(100deg);
+}
+.sign h1 span:nth-child(11) {
+  transform: rotate(110deg);
+}
+.sign h1 span:nth-child(12) {
+  transform: rotate(120deg);
+}
+.sign h1 span:nth-child(13) {
+  transform: rotate(130deg);
+}
+.sign h1 span:nth-child(14) {
+  transform: rotate(140deg);
+}
+.sign h1 span:nth-child(15) {
+  transform: rotate(150deg);
+}
+.sign h1 span:nth-child(16) {
+  transform: rotate(160deg);
+}
+.sign h1 span:nth-child(17) {
+  transform: rotate(170deg);
+}
+.sign h1 span:nth-child(18) {
+  transform: rotate(180deg);
+}
+.sign h1 span:nth-child(19) {
+  transform: rotate(190deg);
+}
+.sign h1 span:nth-child(20) {
+  transform: rotate(200deg);
+}
+.sign h1 span:nth-child(21) {
+  transform: rotate(210deg);
+}
+.sign h1 span:nth-child(22) {
+  transform: rotate(220deg);
+}
+.sign h1 span:nth-child(23) {
+  transform: rotate(230deg);
+}
+.sign h1 span:nth-child(24) {
+  transform: rotate(240deg);
+}
+.sign h1 span:nth-child(25) {
+  transform: rotate(250deg);
+}
+.sign h1 span:nth-child(26) {
+  transform: rotate(260deg);
+}
+.sign h1 span:nth-child(27) {
+  transform: rotate(270deg);
+}
+.sign h1 span:nth-child(28) {
+  transform: rotate(280deg);
+}
+.sign h1 span:nth-child(29) {
+  transform: rotate(290deg);
+}
+.sign h1 span:nth-child(30) {
+  transform: rotate(300deg);
+}
+.sign h1 span:nth-child(31) {
+  transform: rotate(310deg);
+}
+.sign h1 span:nth-child(32) {
+  transform: rotate(320deg);
+}
+.sign h1 span:nth-child(33) {
+  transform: rotate(330deg);
+}
+.sign h1 span:nth-child(34) {
+  transform: rotate(340deg);
+}
+.sign h1 span:nth-child(35) {
+  transform: rotate(350deg);
+}
+.sign h1 span:nth-child(36) {
+  transform: rotate(360deg);
+}
+.sign h1 span:nth-child(37) {
+  transform: rotate(370deg);
+}
+.sign h1 span:nth-child(38) {
+  transform: rotate(380deg);
+}
+.sign h1 span:nth-child(39) {
+  transform: rotate(390deg);
+}
+.sign h1 span:nth-child(40) {
+  transform: rotate(400deg);
+}
+.sign h1 span:nth-child(41) {
+  transform: rotate(410deg);
+}
+.sign h1 span:nth-child(42) {
+  transform: rotate(420deg);
+}
+.sign h1 span:nth-child(43) {
+  transform: rotate(430deg);
+}
+.sign h1 span:nth-child(44) {
+  transform: rotate(440deg);
+}
+.sign h1 span:nth-child(45) {
+  transform: rotate(450deg);
+}
+.sign h1 span:nth-child(46) {
+  transform: rotate(460deg);
+}
+.sign h1 span:nth-child(47) {
+  transform: rotate(470deg);
+}
+.sign h1 span:nth-child(48) {
+  transform: rotate(480deg);
+}
+.sign h1 span:nth-child(49) {
+  transform: rotate(490deg);
+}
+.sign h1 span:nth-child(50) {
+  transform: rotate(500deg);
+}
+.sign h1 span:nth-child(51) {
+  transform: rotate(510deg);
+}
+.sign h1 span:nth-child(52) {
+  transform: rotate(520deg);
+}
+.sign h1 span:nth-child(53) {
+  transform: rotate(530deg);
+}
+.sign h1 span:nth-child(54) {
+  transform: rotate(540deg);
+}
+.sign h1 span:nth-child(55) {
+  transform: rotate(550deg);
+}
+.sign h1 span:nth-child(56) {
+  transform: rotate(560deg);
+}
+.sign h1 span:nth-child(57) {
+  transform: rotate(570deg);
+}
+.sign h1 span:nth-child(58) {
+  transform: rotate(580deg);
+}
+.sign h1 span:nth-child(59) {
+  transform: rotate(590deg);
+}
+.sign h1 span:nth-child(60) {
+  transform: rotate(600deg);
+}
+.sign h1 span:nth-child(61) {
+  transform: rotate(610deg);
+}
+.sign h1 span:nth-child(62) {
+  transform: rotate(620deg);
+}
+.sign h1 span:nth-child(63) {
+  transform: rotate(630deg);
+}
+.sign h1 span:nth-child(64) {
+  transform: rotate(640deg);
+}
+.sign h1 span:nth-child(65) {
+  transform: rotate(650deg);
+}
+.sign h1 span:nth-child(66) {
+  transform: rotate(660deg);
+}
+.sign h1 span:nth-child(67) {
+  transform: rotate(670deg);
+}
+.sign h1 span:nth-child(68) {
+  transform: rotate(680deg);
+}
+.sign h1 span:nth-child(69) {
+  transform: rotate(690deg);
+}
+.sign h1 span:nth-child(70) {
+  transform: rotate(700deg);
+}
+.sign h1 span:nth-child(71) {
+  transform: rotate(710deg);
+}
+.sign h1 span:nth-child(72) {
+  transform: rotate(720deg);
+}
+.sign h1 span:nth-child(73) {
+  transform: rotate(730deg);
+}
+.sign h1 span:nth-child(74) {
+  transform: rotate(740deg);
+}
+.sign h1 span:nth-child(75) {
+  transform: rotate(750deg);
+}
+.sign h1 span:nth-child(76) {
+  transform: rotate(760deg);
+}
+.sign h1 span:nth-child(77) {
+  transform: rotate(770deg);
+}
+.sign h1 span:nth-child(78) {
+  transform: rotate(780deg);
+}
+.sign h1 span:nth-child(79) {
+  transform: rotate(790deg);
+}
+.sign h1 span:nth-child(80) {
+  transform: rotate(800deg);
+}
+.sign h1 span:nth-child(81) {
+  transform: rotate(810deg);
+}
+.sign h1 span:nth-child(82) {
+  transform: rotate(820deg);
+}
+.sign h1 span:nth-child(83) {
+  transform: rotate(830deg);
+}
+.sign h1 span:nth-child(84) {
+  transform: rotate(840deg);
+}
+.sign h1 span:nth-child(85) {
+  transform: rotate(850deg);
+}
+.sign h1 span:nth-child(86) {
+  transform: rotate(860deg);
+}
+.sign h1 span:nth-child(87) {
+  transform: rotate(870deg);
+}
+.sign h1 span:nth-child(88) {
+  transform: rotate(880deg);
+}
+.sign h1 span:nth-child(89) {
+  transform: rotate(890deg);
+}
+.sign h1 span:nth-child(90) {
+  transform: rotate(900deg);
+}
+.sign h1 span:nth-child(91) {
+  transform: rotate(910deg);
+}
+.sign h1 span:nth-child(92) {
+  transform: rotate(920deg);
+}
+.sign h1 span:nth-child(93) {
+  transform: rotate(930deg);
+}
+.sign h1 span:nth-child(94) {
+  transform: rotate(940deg);
+}
+.sign h1 span:nth-child(95) {
+  transform: rotate(950deg);
+}
+.sign h1 span:nth-child(96) {
+  transform: rotate(960deg);
+}
+.sign h1 span:nth-child(97) {
+  transform: rotate(970deg);
+}
+.sign h1 span:nth-child(98) {
+  transform: rotate(980deg);
+}
+.sign h1 span:nth-child(99) {
+  transform: rotate(990deg);
+}
+.sign h1 span:nth-child(100) {
+  transform: rotate(1000deg);
+}
+.sign h1 span.out {
+  animation: Flicker .2s infinite;
+}
+.sign .cntr {
+  box-sizing: border-box;
+  height: 58.5vh;
+  width: 58.5vh;
+  border: 1.2vh solid #B7D7F7;
+  border-radius: 50%;
+  box-shadow: 0 0 3.6vh dodgerblue, inset 0 0 3.6vh dodgerblue;
+  position: absolute;
+  left: 14.55vh;
+  top: 14.55vh;
+  color: white;
+  transform: rotate(60deg);
+}
+.sign .cntr p {
+  margin: 22.5vh 0;
+  color: #D7A7FB;
+  font: 11.25vh "Warnes";
+  text-align: center;
+  text-shadow: 0 0 1.125vh #7C3888, 0 0 2.25vh #B690F9;
+}
+.sign .cntr p span:nth-child(1) {
+  animation: text 3s 0.4s infinite;
+}
+.sign .cntr p span:nth-child(2) {
+  animation: text 3s 0.8s infinite;
+}
+.sign .cntr p span:nth-child(3) {
+  animation: text 3s 1.2s infinite;
+}
+.sign .cntr p span:nth-child(4) {
+  animation: text 3s 1.6s infinite;
+}
+.sign .cntr p span:nth-child(5) {
+  animation: text 3s 2s infinite;
+}
+.sign .cntr p span:nth-child(6) {
+  animation: text 3s 2.4s infinite;
+}
+.sign .cntr p span:nth-child(7) {
+  animation: text 3s 2.8s infinite;
+}
+
+@keyframes text {
+  to {
+    color: rgba(215, 167, 251, 0.4);
+    text-shadow: none;
+  }
+}
+@keyframes Flicker {
+  60%, 80% {
+    color: #A599A2;
+    text-shadow: 0 0 1.8vh rgba(239, 124, 163, 0.45), 0 0 3vh rgba(233, 30, 99, 0.47);
+  }
+  70%, 100% {
+    color: #F1BEEF;
+    text-shadow: 0 0 3vh #EF7CA3, 0 0 4.5vh #E91E63;
+  }
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body {
+  background-color: #3e94ec;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+

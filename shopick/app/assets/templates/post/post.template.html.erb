@@ -1,0 +1,94 @@
+<div ng-controller="PostCtrl" >
+    <md-content  layout="column">
+        <md-progress-linear  md-mode="indeterminate" ng-hide="!activated"></md-progress-linear>
+          <md-card>
+              <md-card-title>
+                <md-card-title-media>
+                  <md-card-avatar>
+                     <img class="user_avatar" src={{post.user_image}}></img>
+                  </md-card-avatar>
+                </md-card-title-media>
+                <md-card-title-text>
+                  <span class="md-headline"> &nbsp;&nbsp; {{post.username}} liked  {{post.categoryname}} at {{post.storename}}</span>
+                  <span class="md-subhead"> &nbsp;&nbsp; {{post.description}}</span>
+                </md-card-title-text>
+              </md-card-title>
+              <div class="wraptocenter">
+              <span></span>
+                <img class="collection_image" src={{post.image_url}} border="1"/>
+              </div>
+              <md-card-actions layout="row" layout-align="space-around center">
+                 <md-button>
+                  <ng-md-icon icon="favorite" style="fill: grey" ></ng-md-icon> 
+                  Like
+                 </md-button>
+                 <md-button>
+                   <ng-md-icon icon="search" style="fill: grey" ></ng-md-icon> 
+                   Locate
+                 </md-button>
+                 <md-button>
+                    <ng-md-icon icon="share" style="fill: grey" ></ng-md-icon> 
+                   Share
+                 </md-button>
+              </md-card-actions>
+            </md-card>
+
+
+             <md-card>
+      <md-card-title >
+      <md-card-title-media>
+        <md-media-md>
+          <img  src={{post.stores[0].brand_logo}}></img>
+        </md-media-md>
+
+      </md-card-title-media>
+      <md-card-title-text layout-align="center start">
+        <span class="md-headline"> &nbsp;&nbsp;  {{post.stores[0].name}}</span>
+        <span class="md-subhead"> &nbsp;&nbsp; {{post.stores[0].address}}</span>
+      </md-card-title-text>
+    </md-card-title>
+  </md-card>
+
+      <md-card>
+      <md-card-title >
+      <md-card-title-text layout-align="center start">
+        <span class="md-headline"> &nbsp;&nbsp;  Similar Posts: </span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-content>
+    <md-grid-list
+        md-cols="1" md-cols-sm="1" md-cols-md="1" md-cols-gt-md="1"
+        md-row-height-gt-md="1:1" md-row-height="1:1"
+        md-gutter="4px" md-gutter-gt-sm="4px" >
+        <md-grid-tile ng-repeat="post in post.similar_posts"
+                  md-rowspan="1"
+                  md-colspan="1"
+                  md-colspan-sm="1"
+                  md-colspan-xs="1">
+              <md-card ng-click=openPost(post.globalID)>
+              <md-card-title>
+                <md-card-title-media>
+                  <md-card-avatar>
+                     <img class="user_avatar" src={{post.user_image}}></img>
+                  </md-card-avatar>
+                </md-card-title-media>
+                <md-card-title-text>
+                  <span class="md-headline"> &nbsp;&nbsp; {{post.username}} liked  {{post.categoryname}} at {{post.storename}}</span>
+                  <span class="md-subhead"> &nbsp;&nbsp; {{post.description}}</span>
+                  
+                </md-card-title-text>
+              </md-card-title>
+              <div class="wraptocenter">
+              <span></span>
+                <img class="collection_image" src={{post.image_url}} border="1"/>
+              </div>
+            </md-card>
+
+      </md-grid-tile>
+    </md-grid-list>
+
+    </md-content>
+  </md-card>
+
+    </md-content>
+</div>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:icon="@drawable/ic_home_grey_500_36dp"
+            android:title="@string/navdrawer_item_home" />
+
+        <item
+            android:id="@+id/alloffers"
+            android:checked="false"
+            android:icon="@drawable/ic_local_offer_grey_500_36dp"
+            android:title="@string/offer" />
+
+        <item
+            android:id="@+id/showfeed"
+            android:checked="false"
+            android:icon="@drawable/ic_trending_up_grey_400_18dp"
+            android:title="@string/collection" />
+
+
+        <item
+            android:id="@+id/showexplore"
+            android:checked="false"
+            android:icon="@drawable/ic_view_quilt_grey_400_24dp"
+            android:title="@string/latest_launch" />
+
+
+
+        <item
+            android:id="@+id/picks"
+            android:checked="false"
+            android:icon="@drawable/ic_account_balance_wallet_grey_400_18dp"
+            android:title="@string/label_picks" />
+        <item
+            android:id="@+id/post"
+            android:checked="false"
+            android:icon="@drawable/ic_camera_alt_grey_400_36dp"
+            android:title="@string/post" />
+        <item
+            android:id="@+id/referandwin"
+            android:checked="false"
+            android:icon="@drawable/ic_share_grey_400_18dp"
+            android:title="@string/share_app" />
+
+
+
+        <item
+            android:id="@+id/rateus"
+            android:checked="false"
+            android:icon="@drawable/ic_rate_review_grey_400_18dp"
+            android:title="@string/rateus" />
+
+        <item
+            android:id="@+id/feedback"
+            android:checked="false"
+            android:icon="@drawable/ic_email_grey_400_18dp"
+            android:title="@string/feedback" />
+
+        <item
+            android:id="@+id/settings"
+            android:checked="false"
+            android:icon="@drawable/ic_settings_grey_400_18dp"
+            android:title="@string/navdrawer_item_settings" />
+
+        <item
+            android:id="@+id/contactus"
+            android:checked="false"
+            android:icon="@drawable/ic_call_grey_400_18dp"
+            android:title="@string/navdrawer_item_contact_us" />
+
+    </group>
+</menu>

@@ -1,0 +1,23 @@
+  <div md-whiteframe="1"  ng-controller="LatestLaunchCtrl" >
+    <md-content >
+      <md-progress-linear  md-mode="indeterminate" ng-hide="!activated"></md-progress-linear>
+      <md-list >
+      <md-subheader  class="md-primary md-accent">Latest Launch
+          <md-tooltip >
+            Sneak peak into your favourite brands latest collection.
+          </md-tooltip>
+      </md-subheader>
+      <md-list-item class="full-width" ng-repeat="update in brand_updates" >
+           <md-card class="full-width" ng-click=openUpdate(update.id)>
+              <img src={{update.image_url}}/>
+              <md-card-title class="latestlaunchtitle">
+                <md-card-title-text>
+                  <span class="md-headline"> {{update.brand_name}}</span>
+                  <span class="md-subhead"> {{update.title}}</span>
+                </md-card-title-text>
+              </md-card-title>
+            </md-card>
+        </md-list-item>
+      </md-list>
+    </md-content>
+</div>

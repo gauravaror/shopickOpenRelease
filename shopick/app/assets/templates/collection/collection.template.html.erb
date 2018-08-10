@@ -1,0 +1,41 @@
+  <div md-whiteframe="1" ng-controller="CollectionCtrl" >
+    <md-content  >
+      <md-progress-linear  md-mode="indeterminate" ng-hide="!activated"></md-progress-linear>
+      <md-list >
+        <md-subheader class="md-primary md-accent">Collection</md-subheader>
+        <md-list-item class="full-width" ng-repeat="post in posts" >
+            <md-card class="full-width" ng-click=openPost(post.globalID)>
+              <md-card-title>
+                <md-card-title-media>
+                  <md-card-avatar>
+                     <img class="user_avatar" src={{post.user_image}}></img>
+                  </md-card-avatar>
+                </md-card-title-media>
+                <md-card-title-text>
+                  <span class="md-headline"> &nbsp;&nbsp; {{post.username}} liked  {{post.categoryname}} at {{post.storename}}</span>
+                  <span class="md-subhead"> &nbsp;&nbsp; {{post.description}}</span>
+                </md-card-title-text>
+              </md-card-title>
+              <div class="wraptocenter">
+              <span></span>
+                <img class="collection_image" src={{post.image_url}} border="1"/>
+              </div>
+              <md-card-actions layout="row" layout-align="space-around center">
+                 <md-button>
+                  <ng-md-icon icon="favorite" style="fill: grey" ></ng-md-icon> 
+                  Like
+                 </md-button>
+                 <md-button>
+                   <ng-md-icon icon="search" style="fill: grey" ></ng-md-icon> 
+                   Locate
+                 </md-button>
+                 <md-button>
+                    <ng-md-icon icon="share" style="fill: grey" ></ng-md-icon> 
+                   Share
+                 </md-button>
+              </md-card-actions>
+            </md-card>
+        </md-list-item>
+      </md-list>
+    </md-content>
+</div>

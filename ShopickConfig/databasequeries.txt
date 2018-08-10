@@ -1,0 +1,14 @@
+update stores set name  = concat(name, " Ambience Vasant Kunj") where address like '%AMBIENCE ISLAND%';
+
+select id,name,address from stores where address like '%DLF%' and address  like '%saket%';
+update stores set name  = replace(name, " Ambience Vasant Kunj", " DLF Place Saket" ) where address  like '%DLF%' and address  like '%saket%';
+
+select id,name,address from stores where address like '%pacific%' and address not like '%ghaziabad%';
+update stores set name  = concat(name, " Pacific Mall, Subhash Nagar") where address like '%pacific%' and address not like '%ghaziabad%';
+
+
+select id,name,address from stores where address like '%pacific%' and address like '%ghaziabad%';
+update stores set name  = concat(name, " Pacific Mall, Ghaziabad") where address like '%pacific%' and address like '%ghaziabad%';
+
+select id,name,address from stores where address like '%dlf%'  and address like '%PROMENADE%';
+update stores set name  = concat(name, " DLF Promenade, Vasant Kunj") where address like '%dlf%'  and address like '%PROMENADE%';

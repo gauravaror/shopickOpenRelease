@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_below="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/post_feed_item_screen_1"/>
+        <include layout="@layout/post_feed_layout_screen_2"/>
+        <include layout="@layout/post_feed_layout_screen_3"/>
+    </FrameLayout>
+    <include layout="@layout/toolbar_main_post_feed" />
+</RelativeLayout>
+

@@ -1,0 +1,120 @@
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_explore_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager_explore"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.acquire.shopick.ui.widget.FloatingActionMenu
+            android:id="@+id/fab_menu_explore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp"
+            android:layout_gravity="bottom|end">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_main_explore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_filter_list_white_24dp"
+                fab:fabSize="normal"
+                fab:borderWidth="0dp"
+                fab:elevation="6dp"
+                fab:backgroundTint="@color/theme_primary"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Category"
+                android:src="@drawable/ic_swap_vert_grey_500_36dp"
+                android:paddingBottom="5dp"
+                fab:fabSize="mini"
+                fab:backgroundTint="@color/theme_primary" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Brand"
+                android:src="@drawable/ic_store_grey_500_36dp"
+                android:paddingBottom="5dp"
+                fab:borderWidth="0dp"
+                fab:elevation="6dp"
+                fab:fabSize="mini"
+                fab:backgroundTint="@color/theme_primary"/>
+
+
+        </com.acquire.shopick.ui.widget.FloatingActionMenu>
+    </FrameLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="wrap_content"
+        >
+    <android.support.design.widget.TabLayout
+        style="@style/MyCustomTabLayout"
+        android:id="@+id/pager_tab_layout"
+        android:layout_gravity="top"
+        app:elevation="0dp"
+        android:background="?android:selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/theme_primary_light"
+        android:textColor="@color/theme_primary_light"
+        android:textSize="@dimen/text_size_medium_plus"
+        android:fontFamily="@string/font_fontFamily_medium"
+        app:tabMode="scrollable"
+        app:tabContentStart="5dp"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/theme_primary_light"
+        app:tabSelectedTextColor="@color/theme_primary_dark"
+        app:layout_scrollFlags="scroll|enterAlways"
+        />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:paddingTop="?actionBarSize"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:visibility="gone"
+        android:paddingTop="?actionBarSize"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/body_text_2"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

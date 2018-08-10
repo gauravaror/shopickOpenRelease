@@ -1,0 +1,91 @@
+source 'https://rubygems.org'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.2.3'
+
+# Use sqlite3 as the database for Active Record
+gem 'mysql2', '~> 0.3.18'
+
+gem 'unicorn'
+# Use SCSS for stylesheets
+
+# Use Uglifier as compressor for JavaScript assets
+
+# Use CoffeeScript for .js.coffee assets and views
+gem 'activeadmin', '~> 1.0.0.pre4'
+gem 'best_in_place', github: 'bernat/best_in_place'
+
+
+#gem 'activeadmin', github: 'activeadmin'
+gem "paperclip", "~> 4.3"
+gem 'devise'
+gem 'devise_token_auth'
+gem 'omniauth'
+
+#For serializing Product in different ways
+gem 'active_model_serializers'
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+#GEm to install meta tags for SEO
+gem 'meta-tags'
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 1.2'
+
+gem 'simple_form'
+gem 'client_side_validations'
+gem 'client_side_validations-simple_form'
+gem "twitter-bootstrap-rails"
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass'
+
+gem 'bower-rails'
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+gem 'angular-rails-templates'
+gem 'sprockets', '2.12.3'
+
+group :assets do
+  gem 'therubyracer'
+  gem 'sass-rails', "  > 3.1.0"
+  gem 'coffee-rails', "> 3.1.0"
+  gem 'uglifier'
+end
+
+
+gem "lograge"
+gem "logstash-event"
+
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano', group: :development
+
+# Use debugger
+# gem 'debugger', group: [:development, :test]
+
+
+gem 'resque', :require => "resque/server" 
+gem 'resque-web', require: 'resque_web'
+gem 'gcm'
+gem 'god'
+gem 'resque-pool'
+gem 'sidekiq'
+gem 'sinatra', :require => nil
+
+

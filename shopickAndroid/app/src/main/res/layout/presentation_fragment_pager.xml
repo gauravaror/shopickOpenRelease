@@ -1,0 +1,65 @@
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_relative"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="4dip"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <se.emilsjolander.flipview.FlipView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:flipview="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager_presentation"
+        flipview:orientation="vertical"
+        flipview:overFlipMode="glow" />
+
+    <LinearLayout android:orientation="horizontal"
+        android:gravity="center" android:measureWithLargestChild="true"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:paddingTop="?actionBarSize"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:visibility="gone"
+        android:paddingTop="?actionBarSize"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/body_text_2"
+        />
+
+
+</LinearLayout>
+<com.acquire.shopick.ui.widget.ProgressView
+android:id="@+id/progress_presentation"
+android:layout_centerHorizontal="true"
+android:layout_centerVertical="true"
+android:layout_marginTop="150dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/rotate"
+app:frameCount="8"
+app:duration="1000"/>
+    </RelativeLayout>

@@ -1,0 +1,12 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iosched="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:divider="@drawable/header_shadow"
+    android:backgroundTint="@color/material_blue_grey_950"
+    android:dividerHeight="0dp"
+    android:clipToPadding="false" />

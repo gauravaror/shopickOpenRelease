@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/dark_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/CategoryItem.Title"
+            android:id="@+id/intro_screen_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/title_post"/>
+        <TextView
+            android:id="@+id/intro_screen_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/body_text_1_inverse"
+            android:text="@string/desc_post"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:id="@+id/docoView_Picks"
+            android:layout_width="match_parent"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:id="@+id/textPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/picks"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/text_size_xslightlylarge"/>
+
+            <TextView
+                android:id="@+id/textRemaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/textPercentage"
+                android:maxWidth="200dp"
+                android:text="@string/monthly_picks"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.hookedonplay.decoviewlib.DecoView
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                custom:dv_lineWidth="26dp"
+                android:id="@+id/dynamicArcView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </com.hookedonplay.decoviewlib.DecoView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

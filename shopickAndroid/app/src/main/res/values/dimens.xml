@@ -1,0 +1,79 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="element_spacing_normal">8dp</dimen>
+    <dimen name="content_padding_normal">16dp</dimen>
+    <dimen name="text_size_xsmall">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_medium_plus">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_xslightlylarge">25sp</dimen>
+    <dimen name="text_size_xlittlelarge">30sp</dimen>
+    <dimen name="text_size_xxlarge">40sp</dimen>
+    <dimen name="top_clearance">?actionBarSize</dimen>
+    <dimen name="text_size_diff_large_small">6sp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="feed_normal_spacing_around">6dp</dimen>
+    <dimen name="fab_elevation">8dp</dimen>
+    <dimen name="fab_press_translation_z">6dp</dimen>
+    <dimen name="headerbar_elevation">4dp</dimen>
+    <dimen name="session_detail_max_header_elevation">@dimen/headerbar_elevation</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="keyline_1_minus_8dp">8dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_3">128dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+    <dimen name="keyline_2_session_detail">@dimen/keyline_2</dimen>
+
+    <dimen name="speaker_image_size">40dp</dimen>
+    <dimen name="session_detail_speaker_left_offset">@dimen/keyline_1_minus_8dp</dimen>
+
+    <dimen name="navdrawer_chosen_account_height">140dp</dimen>
+    <dimen name="navdrawer_width">260dp</dimen>
+    <dimen name="navdrawer_profile_image_size">40dp</dimen>
+
+    <!-- Action Bar auto-hide-on-scroll behavior parameters -->
+    <dimen name="action_bar_auto_hide_min_y">152dp</dimen>
+    <dimen name="action_bar_auto_hide_sensivity">48dp</dimen>
+
+    <dimen name="tag_color_dot_size">12dp</dimen>
+
+    <dimen name="explore_dropdown_item_padding_normal">16dp</dimen>
+    <dimen name="explore_dropdown_item_padding_indented">16dp</dimen>
+    <dimen name="explore_dropdown_item_width">240dp</dimen>
+    <dimen name="explore_dropdown_item_height">48dp</dimen>
+    <dimen name="explore_spinner_width">200dp</dimen>
+    <dimen name="explore_grid_padding">4dp</dimen>
+    <dimen name="explore_grid_padding_half">2dp</dimen>
+
+    <dimen name="swipe_refresh_progress_bar_start_margin">-40dp</dimen>
+    <dimen name="swipe_refresh_progress_bar_end_margin">16dp</dimen>
+
+    <dimen name="explore_hero_item_height">240dp</dimen>
+    <dimen name="explore_feed_edit_box">100dp</dimen>
+
+    <dimen name="filter_spinner_width">0dp</dimen>
+    <integer name="filter_spinner_weight">1</integer>
+
+    <!-- Explore activity -->
+    <dimen name="list_item_action_width">105dp</dimen>
+    <dimen name="list_item_action_height">90dp</dimen>
+    <dimen name="list_item_action_margin">2dp</dimen>
+    <dimen name="action_button_padding">10dp</dimen>
+    <dimen name="spinner_left_padding">16dp</dimen>
+    <dimen name="spinner_tab_left_padding">2dp</dimen>
+    <dimen name="spinner_tab_right_padding">2dp</dimen>
+    <dimen name="spinner_layout_height">48dp</dimen>
+    <dimen name="presentation_details_extra_space_bottom">48dp</dimen>
+    <dimen name="fab_button_bottom_padding">60dp</dimen>
+    <dimen name="abc_action_bar_default_padding_material">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_width_circle_three">100dp</dimen>
+    <dimen name="fab_width_circle_three_smaller">85dp</dimen>
+    <dimen name="layout_internal_padding">4dp</dimen>
+</resources>

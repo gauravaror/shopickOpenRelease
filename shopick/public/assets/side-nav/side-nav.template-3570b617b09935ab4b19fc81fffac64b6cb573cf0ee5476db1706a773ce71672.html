@@ -1,0 +1,24 @@
+
+<md-sidenav
+  class="md-sidenav-left"
+  md-component-id="left"
+  md-is-locked-open="$mdMedia('gt-md')"
+  md-disable-backdrop
+  md-whiteframe="4">
+      <header class="nav-header">
+        <a ng-href="/" class="docs-logo">
+          <%= image_tag "logo.png" %>
+          <h1 class="docs-logotype md-heading">Shopick</h1>
+        </a>
+      </header>
+    <md-content flex role="navigation">
+      <ul class="docs-menu">
+        <li ng-repeat="section in menuItem" class="parent-list-item " >
+          <h2 class="menu-heading md-subhead" ng-if="section.type === 'heading'" >
+            {{section.name}}
+          </h2>
+            <menu-link/>
+        </li>
+      </ul>
+    </md-content>
+</md-sidenav>

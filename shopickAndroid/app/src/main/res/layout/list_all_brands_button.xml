@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:layout_scrollFlags="scroll"
+    android:layout_margin="@dimen/element_spacing_normal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<Button android:drawableLeft="@drawable/ic_menu_grey_700_24dp"
+    android:padding="@dimen/element_spacing_normal"
+    android:background="@color/material_white"
+    android:textAllCaps="false"
+    android:layout_width="match_parent"
+    android:textSize="@dimen/text_size_large"
+    android:layout_height="50dp"
+    android:textColor="@color/accentPrimary"
+    android:hint="@string/list_all_brands"
+    android:id="@+id/list_all_brands"
+    android:layout_gravity="start"
+    app:layout_scrollFlags="scroll"
+    android:gravity="center_vertical|center_horizontal"
+    android:textAppearance="@android:style/TextAppearance.Small"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

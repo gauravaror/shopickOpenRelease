@@ -1,0 +1,30 @@
+  <div md-whiteframe="1" ng-controller="OfferControllerCtrl" >
+    <md-content >
+      <md-progress-linear  md-mode="indeterminate" ng-hide="!activated"></md-progress-linear>
+      <md-list>
+        <md-subheader class="md-primary md-accent">Offer
+          <md-tooltip >
+            Discover offers that are currently available at stores.
+          </md-tooltip>
+        </md-subheader>
+        <md-list-item class="full-width" ng-repeat="pc in post_collections" >
+           <md-card class="full-width" ng-click=openOffer(pc.globalID)>
+              <md-card-title>
+                  <md-card-avatar>
+                     <img class="user_avatar" src={{pc.brand_logo}}></img>
+                  </md-card-avatar>
+
+                <md-card-title-text>
+                  <span class="md-headline">  &nbsp;&nbsp; {{pc.brand_name}} : {{pc.title}}</span>
+                </md-card-title-text>
+              </md-card-title>
+                    <md-virtual-repeat-container class="post_images" id="horizontal-container" md-orient-horizontal>
+                      <div md-virtual-repeat="post in pc.posts" class="repeated-item-horizontal" flex>
+                        <img src={{post.image_url}} ng-click=openPost(post.globalID) />
+                      </div>
+                  </md-virtual-repeat-container>
+            </md-card>
+        </div>
+      </md-virtual-repeat-container>
+    </md-content>
+</div>

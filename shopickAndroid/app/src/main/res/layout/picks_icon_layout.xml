@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/arcRelativeLayout"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.hookedonplay.decoviewlib.DecoView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            custom:dv_lineWidth="26dp"
+            android:id="@+id/dynamicArcView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </com.hookedonplay.decoviewlib.DecoView>
+
+
+        <Button
+            android:background="@null"
+            android:id="@+id/textPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:elevation="@dimen/fab_elevation"
+            android:layout_centerVertical="true"
+            android:text="10 P"
+            android:textColor="@color/material_white"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textSize="@dimen/text_size_xsmall"/>
+    </RelativeLayout>
+
+</RelativeLayout>

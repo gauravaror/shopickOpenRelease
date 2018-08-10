@@ -1,0 +1,4 @@
+Post.find_by_sql("select  p.*, (IFNULL(a.affinity_scores,1))/POW(DATEDIFF(now(),p.created_at)+1, 2) as score, IF(r.post_id, 0, 1) as read_ from posts as p left join affinity_scores as a on (a.user_id = 105 and a.brand_id = p.brand_id and DATEDIFF(now(),p.created_at) < 20)  left join read_posts as r on (r.user_id =  105 and p.id = r.post_id)  where DATEDIFF(now(),p.created_at) < 20  and  p.post_type != 2 order by read_ desc, score desc, p.created_at desc").size
+
+
+Post.joins("left join affinity_scores as a on (a.user_id = 105 and a.brand_id = posts.brand_id and DATEDIFF(now(),posts.created_at) < 20)").joins("left join read_posts as r on (r.user_id =  105 and posts.id = r.post_id)").select("posts.*, (IFNULL(a.affinity_scores,1))/POW(DATEDIFF(now(),posts.created_at)+1, 2) as score, IF(r.post_id, 0, 1) as read_").where("DATEDIFF(now(), posts.created_at) < 20  and  posts.post_type != 2").order("read_ desc, score desc, posts.created_at desc")

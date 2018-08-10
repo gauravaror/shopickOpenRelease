@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="70dp"
+    android:weightSum="2"
+    android:layout_height="match_parent">
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textColor="@color/material_white"
+        android:textSize="@dimen/text_size_xsmall"
+        android:textAllCaps="false"
+        android:id="@+id/see_all_button"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/see_all"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textColor="@color/material_white"
+        android:textSize="@dimen/text_size_xsmall"
+        android:textAllCaps="false"
+        android:id="@+id/post_post_collection"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/post"
+        />
+</LinearLayout>

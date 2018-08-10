@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_relative"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/list_feed_container"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/gray_background"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_feed"
+            android:background="@color/gray_background"
+            android:layout_width="match_parent"
+            android:layout_marginRight="1.0sp"
+            android:layout_marginLeft="1.0sp"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            ></android.support.v7.widget.RecyclerView>
+
+
+
+        <!--First button as menu button-->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:background="@color/gray_background"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/banner_layout"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll"
+                    >
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    />
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:padding="1dip"
+                    android:id="@+id/intro_screens"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/gradient_line"
+                    app:fillColor="@color/theme_primary"
+                    app:pageColor="@color/gray_background"
+                    app:strokeColor="@color/theme_primary_dark"
+                    />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    app:layout_scrollFlags="scroll|enterAlways"
+
+                    >
+
+                    <Button
+                        style="@style/feedButtonUnselected"
+                        android:id="@+id/offer_button_feed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offer"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/abc_action_bar_default_padding_material"
+                        />
+                    <Button
+                        style="@style/feedButtonUnselected"
+                        android:id="@+id/collection_button_feed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/liked"
+                        android:layout_margin="@dimen/abc_action_bar_default_padding_material"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+<com.acquire.shopick.ui.widget.ProgressView
+android:id="@+id/progress_feed"
+android:layout_centerHorizontal="true"
+android:layout_centerVertical="true"
+android:layout_marginTop="150dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/rotate"
+app:frameCount="8"
+app:duration="1000"/>
+    </RelativeLayout>

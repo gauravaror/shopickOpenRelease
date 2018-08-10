@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+<p>
+Hi , 
+</p>
+<p>
+Some one is looking for you to locate a product for them
+<br>
+<p style="color:#0000FF;">
+Name: 
+</p>
+<%=@find.name%>
+<br>
+<p style="color:#0000FF;">
+Description: 
+</p>
+<%=@find.description%>
+<br>
+<p style="color:#0000FF;">
+Email: 
+</p>
+<%=@find.email%>
+<br>
+<p style="color:#0000FF;">
+Phone Number: 
+</p>
+<%=@find.phoneno%>
+<br>
+<p style="color:#0000FF;">
+Global Id: 
+</p>
+<%=@find.globalID%>
+<br>
+<p style="color:#0000FF;">
+Image: 
+</p>
+<img src="www.shopick.co.in/<%=@find.findanything_image.url(:medium)%>"/>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+Regards,
+<br>
+Shopick Mailer
+<br>
+#FindAnything
+<br>
+SHOPICK - Keep Findings
+<br>
+  </body>
+</html>

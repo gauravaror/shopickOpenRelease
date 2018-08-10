@@ -1,0 +1,60 @@
+      <md-content class="md-padding" hide-gt-md>
+        <md-card>
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">Discover offers that are currently available at stores.</span>
+            </md-card-title-text>
+            <md-card-title-media>
+              <md-button ng-click=go('/offer') class="md-fab" aria-label="Offer">
+                    Offer
+              </md-button>
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+        <md-card>
+          <md-card-title>
+            <md-card-title-text>
+              <md-button ng-click=go('/liked_collection') class="md-fab" aria-label="Collection">
+                    Collection
+              </md-button>
+
+            </md-card-title-text>
+            <md-card-title-media>
+                <span class="md-headline">Check out what other are buying/liking at stores.</span>
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+                <md-card>
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">Sneak peak into your favourite brands latest collection.</span>
+            </md-card-title-text>
+            <md-card-title-media>
+              <md-button ng-click=go('/latest_launch') class="md-fab" aria-label="Latest Launch">
+                    Latest Launch
+              </md-button>
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+  </md-content>
+
+  <div layout-gt-sm="row" hide show-gt-md>
+    <div  flex="33" layout-padding>    
+      <liked-collection show-gt-md></liked-collection>
+    </div>
+      <div  flex="33" layout-padding>
+      
+      <latest-launch show-gt-md></latest-launch>
+      </div>
+      
+      <div  flex="33" layout-padding>
+
+      <post-collections show-gt-md></post-collections>
+      </div>
+  </div>
+    <div layout="row" flex="noshrink" layout-align="center center" class="layout-align-center-center layout-row flex-noshrink">
+      <div id="license-footer" flex="" class="ng-binding wrapper flex">
+       <md-button class="md-accent md-raised"> Post your recent purchase </md-button>
+
+      </div>
+    </div>

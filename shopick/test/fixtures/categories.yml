@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pc_id: 1
+  keyword: MyString
+  mapped_keyword: MyString
+  cat_desc: MyString
+
+two:
+  pc_id: 1
+  keyword: MyString
+  mapped_keyword: MyString
+  cat_desc: MyString

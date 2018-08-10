@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/material_white"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".PickDisplayActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px"/>
+    <RelativeLayout
+        android:id="@+id/docoView_Picks"
+        android:layout_width="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="400dp"
+        >
+
+        <TextView
+            android:id="@+id/textPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/picks"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/textRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textPercentage"
+            android:maxWidth="200dp"
+            android:text="@string/monthly_picks"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <com.hookedonplay.decoviewlib.DecoView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            custom:dv_lineWidth="26dp"
+            android:id="@+id/dynamicArcView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </com.hookedonplay.decoviewlib.DecoView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/docoView_Picks"
+        android:weightSum="3"
+        android:layout_width="fill_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/earnPicks"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/redeem_text"
+        android:padding="12dp"
+        android:text="@string/earn_picks"
+        android:src="@drawable/ic_favorite_black_24dp"/>
+
+        <Button
+            android:id="@+id/dummyPicks"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/redeem_text"
+            android:padding="12dp"
+            android:visibility="invisible"
+            android:src="@drawable/ic_favorite_black_24dp"/>
+    <Button
+        android:id="@+id/reedemPicks"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/redeem"
+        android:contentDescription="@string/redeem_text"
+        android:padding="12dp"
+        />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_leaderboard"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:background="@drawable/background_phonenumber"
+            android:visibility="gone"
+            android:padding="@dimen/activity_horizontal_margin"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/abc_action_bar_default_padding_material"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/leaderboard"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:id="@+id/leaderboard_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/body_text_1"
+                android:layout_below="@id/textPercentage"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/abc_action_bar_default_padding_material"
+                android:text="@string/monthly_picks_leader_desc"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+            <ImageView
+                android:id="@+id/leaderboard_award_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:src="@drawable/ic_account_balance_wallet_grey_400_18dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/leaderboard"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:focusable="false"
+                android:touchscreenBlocksFocus="false"
+                android:clipToPadding="false"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

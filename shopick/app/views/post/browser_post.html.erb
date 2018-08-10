@@ -1,0 +1,87 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag    "browser_post", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "angular-material/angular-material.css", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "https://fonts.googleapis.com/icon?family=Material+Icons", media: "all", "data-turbolinks-track" => true %>
+  
+<meta property="fb:app_id" content="924859280931985" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ask us to locate any design or product that you are looking for #FindAnything #Delhi"/>
+<meta property="og:description" content="Ask us to locate any design or product that you are looking for or even an advice or suggestion from our experts for your retail needs. "/>
+<meta property="og:url" content="http://shopick.co.in/findanything" />
+<meta property="og:site_name" content="shopick.co.in" />
+<meta property="og:image" content="http://shopick.co.in/bannerfindanything.jpg"/>
+<meta property="og:image:url" content="http://shopick.co.in/bannerfindanything.jpg"/>
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:site" content="@shopickapp">
+<meta name="twitter:creator" content="@shopickapp">
+<meta name="twitter:title" content="Ask us to locate any design or product that you are looking for #FindAnything #Delhi @shopickapp">
+<meta name="twitter:description" content="We will locate any product you are looking for around your area to make your shopping experience wonderful.">
+<meta name="twitter:image" content="http://shopick.co.in/banner.jpg" >
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script> 
+<%= javascript_include_tag "shopick.module.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "shopick-side-nav/shopick-side-nav.component.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "liked_collection/liked-collection.component.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "latest_launch/latest_launch.component.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "offer/offer.component.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "liked_collection/post.component.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "collection/collection-detail.component.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "updates/updates.component.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "product/product.component.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "post/post.component", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "jquery-1.10.2.min", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "browser_post", "data-turbolinks-track" => true %>
+  <base href="/">
+
+<%end %>
+
+<shopick-nav ></shopick-nav>
+
+<div layout="column" tabindex="-1" role="main" flex="" class="layout-column flex">
+    <md-toolbar class="md-hue-2 toolbar" aria-label="Settings" >
+
+      <div class="md-toolbar-tools docs-toolbar-tools" tabindex="-1">
+        <button class="md-icon-button md-button md-ink-ripple hide-gt-sm" type="button"  ng-click="openMenu()" hide-gt-sm="" aria-label="Toggle Menu">
+        <ng-md-icon icon="menu" style="fill: white" ></ng-md-icon> 
+
+        </button>
+        <div layout="row" flex="" class="fill-height layout-row flex">
+          <h2 class="md-toolbar-item md-breadcrumb md-headline">
+            <!-- ngIf: menu.currentPage.name !== menu.currentSection.name -->
+            <span class="md-breadcrumb-page ng-binding">Shopick</span>
+          </h2>
+
+          <span flex="" class="flex"></span> <!-- use up the empty space -->
+          <md-button class="md-toolbar-item md-breadcrumb md-headline" ng-click="showLogin()">
+            <!-- ngIf: menu.currentPage.name !== menu.currentSection.name -->
+            <span class="md-breadcrumb-page ng-binding">30 Picks</span>
+          </h2>
+
+        </div>
+        <md-button class="md-icon-button" aria-label="More">
+          <ng-md-icon icon="more_vert" style="fill: white" ></ng-md-icon> 
+        </md-button>
+
+      </div>
+      <md-button class="md-raised">
+      <div align="center"  style="margin: 0 auto; vertical-align: middle;">
+        <ng-md-icon icon="search" style="fill: grey;"  size="36"></ng-md-icon> 
+        &nbsp;&nbsp;
+        Search for Posts, Collections, Brands
+        </div>
+        </md-button>
+
+
+    </md-toolbar>
+    <div class="view-animate-container">
+      <div ng-view class="view-animate"></div>
+    </div>
+
+
+</div>
+
+
+

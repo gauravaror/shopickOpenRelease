@@ -1,0 +1,45 @@
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:id="@+id/collection_item_target">
+
+    <!-- Collection image-->
+    <ImageView android:id="@+id/collection_item_photo_colored"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/placeholder_verticle" />
+
+    <!-- Info box -->
+    <LinearLayout
+        android:id="@+id/info_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <!-- Session title -->
+        <TextView android:id="@+id/collection_title"
+            style="@style/CategoryItem.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/common_google_play_services_api_unavailable_text" />
+
+        <!-- Abstract snippet -->
+        <TextView android:id="@+id/collection_snippet"
+            style="@style/CategoryItem.Snippet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:text="@string/placeholder_update_snippet" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

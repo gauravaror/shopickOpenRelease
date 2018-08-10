@@ -1,0 +1,27 @@
+  <div ng-controller="LikedCollectionCtrl" >
+    <md-content  layout="column">
+      <md-virtual-repeat-container class= "collection_container" id="vertical-container">
+        <md-subheader class="md-primary md-accent">Collection</md-subheader>
+        <div md-virtual-repeat="post in posts"  >
+          <md-card ng-click=openPost(post.globalID)>
+              <md-card-title>
+                <md-card-title-media>
+                  <md-card-avatar>
+                     <img class="user_avatar" src={{post.user_image}}></img>
+                  </md-card-avatar>
+                </md-card-title-media>
+                <md-card-title-text>
+                  <span class="md-headline"> &nbsp;&nbsp; {{post.username}} liked  {{post.categoryname}} at {{post.storename}}</span>
+                  <span class="md-subhead"> &nbsp;&nbsp; {{post.description}}</span>
+                  
+                </md-card-title-text>
+              </md-card-title>
+              <div class="wraptocenter">
+              <span></span>
+                <img class="collection_image" src={{post.image_url}} border="1"/>
+              </div>
+            </md-card>
+        </div>
+      </md-virtual-repeat-container>
+    </md-content>
+</div>

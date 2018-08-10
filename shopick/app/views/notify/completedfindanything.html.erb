@@ -1,0 +1,142 @@
+
+   
+<% content_for :head do %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "findanythingbody", media: "all", "data-turbolinks-track" => true %>
+
+<meta property="fb:app_id" content="924859280931985" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ask us to locate any design or product that you are looking for #FindAnything #Delhi"/>
+<meta property="og:description" content="Ask us to locate any design or product that you are looking for or even an advice or suggestion from our experts for your retail needs. "/>
+<meta property="og:url" content="http://shopick.co.in/findanything" />
+<meta property="og:site_name" content="shopick.co.in" />
+<meta property="og:image" content="http://shopick.co.in/bannerfindanything.jpg"/>
+<meta property="og:image:url" content="http://shopick.co.in/bannerfindanything.jpg"/>
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:site" content="@shopickapp">
+<meta name="twitter:creator" content="@shopickapp">
+<meta name="twitter:title" content="Ask us to locate any design or product that you are looking for #FindAnything #Delhi @shopickapp">
+<meta name="twitter:description" content="We will locate any product you are looking for around your area to make your shopping experience wonderful.">
+<meta name="twitter:image" content="http://shopick.co.in/banner.jpg" >
+<%= javascript_include_tag "angular/angular.min", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "angular-route/angular-route.min", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "jquery-1.10.2.min", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "rails.validations", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "rails.validations.simple_form", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "jquery.geocomplete.min", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "notify", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "modernizr", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "completefindanything", media: "all", "data-turbolinks-track" => true %>
+
+
+<% end %>
+
+
+   <div class="headerfindanything">	
+    <div class="header-top">
+       <div class="wrap"> 
+	         <div class="logo">
+				<a href="/"><%= image_tag "logo.png" %></a>
+			 </div>
+			 		<div class="cssmenu findanything">
+					  <h2>#FindAnything</h2> 
+				    </div>			
+
+		    <div class="clear"></div>
+	   </div>
+	 </div>
+	        <div class="header-bottom" id="section-1">
+				<div class="wrap">
+   				</div>
+  			</div>
+	</div>
+				<div  id="findform" class="findanything-wrapper" >
+				<div class="container-fluid" >
+				<div class="row text-center">
+				<div class="col-xs-12">
+						<section class="cd-intro">
+							<h1 class="cd-headline letters type">
+								<span>Our Operations Team is Heavylifting for you</span>
+								<br>
+								<br>
+									<div id="anim">┗(-_-)┛</div>
+							</h1>
+						</section>
+						<br>
+						<br>
+						<section class="cd-intro">
+							<h1 class="cd-headline letters type">
+							<div class="table-title">
+							<h3>Your Query Details:</h3>
+							</div>
+							<table class="table-fill">
+							<tbody class="table-hover">
+							<tr>
+							<td class="text-left">Query:</td>
+							<td class="text-left"><%=@findanything.description%></td>
+							</tr>
+							<tr>
+							<td class="text-left">Locality:</td>
+							<td class="text-left"><%= @findanything.locality%></td>
+							</tr>
+							<tr>
+							<td class="text-left">Contact Details:</td>
+							<td class="text-left"><%=  @findanything.phoneno%></td>
+							</tr>
+							<tr>
+							<td class="text-left">Status:</td>
+							<td class="text-left"><%=  @findanything.status%></td>
+							</tr>
+							</tbody>
+							</table>
+							</h1>
+						</section>
+
+
+				</div>
+
+					</div>
+					</div>
+				</div>
+<div class="html_complete">
+<div class="body_complete">
+<div class="sign">
+  <h1><span>H</span><span>E</span><span>A</span><span>V</span><span>Y</span><span class="out">L</span><span>I</span><span>F</span><span>T</span><span>I</span><span>N</span><span>G</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>S</span><span>H</span><span>O</span><span class="out">P</span><span>I</span><span>C</span><span>K</span></h1>
+  <div class="cntr">
+    <p> <span>t</span><span>h</span><span>a</span><span>n</span><span>k</span><span>s</span><span>!</span></p>
+  </div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	
+
+   var faces = [
+  "┏(-_-)┛",
+  "┗(-_- )┓",
+  "┗(-_-)┛",
+  "┏(-_-)┓",
+  "┏(-_-)┛",
+  "┗( -_-)┓",
+  "┗(-_-)┛",
+  "┏(-_-)┓"
+];
+
+var i = 0;
+
+animate();
+function animate() {
+  document.getElementById("anim").innerHTML = faces[i];
+  i += 1;
+  if (i==faces.length) {
+    i=0;
+  }
+  setTimeout(animate, 300);
+}
+  </script>
+
+
+</script>

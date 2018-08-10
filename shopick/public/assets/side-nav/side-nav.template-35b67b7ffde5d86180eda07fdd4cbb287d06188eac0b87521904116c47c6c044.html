@@ -1,0 +1,23 @@
+<md-sidenav
+  class="md-sidenav-left "
+  md-component-id="left"
+  md-is-locked-open="$mdMedia('gt-md')"
+  md-disable-backdrop
+  md-whiteframe="2">
+     
+      <header class="nav-header">
+        <a ng-href="/" class="docs-logo">
+       <!--   <img src="/assets/cover4-874e0c950332093f677bfa299defbf5bc40150b4e44ae703cd37ac2f39db151b.png" alt="Cover4 874e0c950332093f677bfa299defbf5bc40150b4e44ae703cd37ac2f39db151b" />-->
+        </a>
+      </header>
+    <md-content  role="navigation">
+      <ul class="docs-menu">
+        <li ng-repeat="section in $ctrl.menuItem" >
+          <md-button ng-click=openLink(section.url) class=" menu-heading " >
+          <ng-md-icon icon={{section.icon}} style="fill: grey" ></ng-md-icon> 
+          &nbsp;&nbsp;&nbsp;&nbsp;
+            {{section.name}}
+        </li>
+      </ul>
+    </md-content>
+</md-sidenav>

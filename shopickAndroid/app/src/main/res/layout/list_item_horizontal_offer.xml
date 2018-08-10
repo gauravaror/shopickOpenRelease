@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/material_white"
+    android:layout_margin="@dimen/list_item_action_margin">
+    <TextView
+        android:id="@+id/brand_name"
+        style="@style/FeedItem.Title"
+        android:textColor="@color/no_track_branding_session_tile_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/TextBody"
+        android:id="@+id/post_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Session image -->
+    <ImageView android:id="@+id/poster_photo_colored"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        />
+
+</LinearLayout>

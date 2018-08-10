@@ -1,0 +1,12 @@
+{
+"format":"shopick-json-v1",
+"data_files": [
+"http://partner.coupik.com/api/v1/updates",
+"http://partner.coupik.com/api/v1/feed_meta/1",
+"http://partner.coupik.com/api/v1/tips",
+"http://partner.coupik.com/api/v1/topcategory",
+"http://partner.coupik.com/api/v1/tagcategory",
+"http://partner.coupik.com/api/v1/brands",
+"http://partner.coupik.com/api/v1/stores_meta"
+]
+}

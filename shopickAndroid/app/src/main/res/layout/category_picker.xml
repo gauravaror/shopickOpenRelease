@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_relative"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/toolbar_category" /> <!-- placeholder, empty except on L -->
+        <EditText
+            android:id="@+id/filter_category"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            android:textCursorDrawable=
+            android:textColor="@color/body_text_1"
+            android:background="@null"
+            android:hint="@string/filter_stores"
+        </EditText>
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/list_categories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10.0sp"
+            android:layout_marginRight="1.0sp"
+            android:layout_marginLeft="1.0sp"
+            android:background="@drawable/back"
+            android:clipToPadding="false"
+            android:divider="@color/gray_background"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+
+            />
+    </LinearLayout>
+
+    <com.acquire.shopick.ui.widget.ProgressView
+        android:id="@+id/progress_categories"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rotate"
+        app:frameCount="8"
+        app:duration="1000"/>
+</RelativeLayout>

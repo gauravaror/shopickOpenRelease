@@ -1,0 +1,103 @@
+
+
+.md-button.md-fab.md-ink-ripple {
+  line-height: 5.6rem;
+  min-width: 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+.nav-header {
+	height: 180px;
+	background-image:image-url("cover4.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+
+}
+
+ul
+{
+    
+    padding:0; margin:0;
+}
+.collection_container  {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 78vh;
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+
+
+.post_images {
+ position: relative;
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: solid 1px #ccc;
+  padding: 10px; 
+}
+
+#horizontal-container {
+  height: 300px;
+  width: 100%; 
+}
+
+
+
+.repeated-item-horizontal {
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+   display: inline-block;
+    height: 300px;
+   text-align: center;
+
+}
+
+.user_avatar {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.collection_image {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.product_image {
+  max-height: 600px;
+  max-width: 300px;
+}
+
+.wraptocenter img {
+    display: block;
+    margin: 0 auto;
+    clear:both;
+    vertical-align: middle;
+
+}
+
+.full-width {
+  width:95%;
+}
+
+.toolbar {
+  min-height: 110px;
+}
+
+.sidenavclass {
+  width: 250px;
+}

@@ -1,0 +1,18 @@
+<md-card>
+              <md-card-title>
+                <md-card-title-media>
+                  <md-card-avatar>
+                     <img class="user_avatar" src={{postarg.user_image}}></img>
+                  </md-card-avatar>
+                </md-card-title-media>
+                <md-card-title-text>
+                  <span class="md-headline"> &nbsp;&nbsp; {{postarg.username}} liked  {{postarg.categoryname}} at {{postarg.storename}}</span>
+                  <span class="md-subhead"> &nbsp;&nbsp; {{postarg.description}}</span>
+                  
+                </md-card-title-text>
+              </md-card-title>
+              <div class="wraptocenter">
+              <span></span>
+                <img class="collection_image" src={{postarg.image_url}} border="1"/>
+              </div>
+</md-card>

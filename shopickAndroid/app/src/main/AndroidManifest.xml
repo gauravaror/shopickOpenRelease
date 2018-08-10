@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.acquire.shopick"
+    android:installLocation="preferExternal">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- required for setIsSyncable -->
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+
+    <permission android:name="com.acquire.shopick.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.acquire.shopick.permission.C2D_MESSAGE" />
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <permission
+        android:name="com.acquire.shopick.permission.WRITE_SHOPICK"
+        android:protectionLevel="normal"
+        android:label="@string/permission_write"
+        android:description="@string/permission_write" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".ShopickApplication"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <!-- Google Play Services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+
+        <activity
+            android:name=".ui.Shopick"
+            android:theme="@style/Theme.Shopick.Shopick"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ui.ChoiceBrowserActivity"
+            android:theme="@style/Theme.Shopick.Shopick"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ui.SearchableActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_eula"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+
+        </activity>
+
+        <activity
+            android:name=".ui.FragmentContainerActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_post"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/generic_opener" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/generic_opener" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/generic_opener" />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.LikedBrandActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_liked_brands"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/setting_liked_brands" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/setting_liked_brands" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/setting_liked_brands" />
+
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.PostFeedItem"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_post"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/add_post" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/add_post" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/add_post" />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.ActivityUpdatePhoneNumber"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/update_phone_number" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/update_phone_number" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/update_phone_number" />
+
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ui.CategoryPickerActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_category_picker"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ui.LocationPickerActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_location_picker"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ui.BrandPickerActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_brand_picker"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ui.SettingActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".ui.ProductCollectionActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_product_collection"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/presentation" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/presentation" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/presentation" />
+
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/updates" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/updates" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/updates" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.ProductActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_product"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/product" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/product" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/product" />
+
+
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ui.LocalPostActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_product"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/post" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/post" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/post" />
+
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name=".ui.PostCollectionActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_post_collection"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/collection" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/collection" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/collection" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.ReedemReferralActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_redeem"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/redeem_referral" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/redeem_referral" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/redeem_referral" />
+            </intent-filter>
+
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.ReferAndWinPicksActivity"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_refer_and_win"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/refer_and_win" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/refer_and_win" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/refer_and_win" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.PickDisplayActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/title_activity_picks"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/filter_title_viewpost">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/display_picks" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/display_picks" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/display_picks" />
+            </intent-filter>
+        </activity>
+
+        <activity
+        android:name=".ui.LoginActivity"
+        android:theme="@style/Theme.Shopick.Sessions"
+        android:label="@string/title_activity_login">
+        <intent-filter android:label="@string/filter_title_viewpost">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="android"
+                android:host="www.shopick.co.in"
+                android:pathPrefix="/start_login" />
+            <data android:scheme="http"
+                android:host="www.shopick.co.in"
+                android:pathPrefix="/start_login" />
+            <data android:scheme="https"
+                android:host="www.shopick.co.in"
+                android:pathPrefix="/start_login" />
+        </intent-filter>
+    </activity>
+
+    <activity
+            android:name=".ui.EarnPicks"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_earnPicks">
+            <intent-filter android:label="@string/title_activity_earnPicks">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/earn_picks" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/earn_picks" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/earn_picks" />
+            </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".ui.RedeemPicks"
+            android:theme="@style/Theme.Shopick.Sessions"
+            android:label="@string/title_activity_redeemPicks">
+            <intent-filter android:label="@string/title_activity_redeemPicks">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="android"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/redeem_picks" />
+                <data android:scheme="http"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/redeem_picks" />
+                <data android:scheme="https"
+                    android:host="www.shopick.co.in"
+                    android:pathPrefix="/redeem_picks" />
+            </intent-filter>
+        </activity>
+
+
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name="com.acquire.shopick.receivers.InstallReferralReceiver" android:exported="true" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.acquire.shopick" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name="com.acquire.shopick.gcm.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name="com.acquire.shopick.gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name="com.acquire.shopick.gcm.RegistrationIntentService"
+            android:exported="false">
+        </service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c71257df9b1a8c8d76144fe4161343d56cfba952" />
+    </application>
+
+</manifest>

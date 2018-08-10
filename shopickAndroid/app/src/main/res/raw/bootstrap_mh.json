@@ -1,0 +1,532 @@
+{
+  "tags": [
+    {
+      "category": "WOMEN",
+      "name": "Tee's & Polos",
+      "color": "#607d8b",
+      "abstract": "",
+      "tag": "WOMEN_TEES",
+      "original_id": "eea54986-3688-e311-84db-00155d5066d8",
+      "order_in_category": 1
+    },
+    {
+      "category": "WOMEN",
+      "name": "Ethnic",
+      "color": "#0288d1",
+      "abstract": "",
+      "tag": "WOMEN_DRESS",
+      "original_id": "dc28355c-d3d0-e311-b297-00155d5066d9",
+      "hashtag": "Cloud",
+      "order_in_category": 2
+    },
+    {
+      "category": "WOMEN",
+      "name": "Jeans",
+      "color": "#2a56c6",
+      "abstract": "",
+      "tag": "WOMEN_Jeans",
+      "original_id": "84af5c68-fde0-e311-b297-00155d5067d7",
+      "order_in_category": 3
+    },
+    {
+      "category": "WOMEN",
+      "name": "Dresses",
+      "color": "#00838f",
+      "abstract": "",
+      "tag": "WOMEN_DRESSES",
+      "original_id": "82af5c68-fde0-e311-b297-00155d5068d7",
+      "order_in_category": 4
+    },
+    {
+      "category": "WOMEN",
+      "name": "Footwear",
+      "abstract": "",
+      "tag": "WOMEN_Footwear",
+      "original_id": "2ade1c01-8ed0-e311-b297-00154d5066d7",
+      "order_in_category": 5
+    },
+    {
+      "category": "MEN",
+      "name": "Shirts",
+      "color": "#b93221",
+      "abstract": "",
+      "tag": "MEN_SHIRTS",
+      "original_id": "c899de92-3688-e311-84db-00255d5066d7",
+      "order_in_category": 1
+    },
+    {
+      "category": "MEN",
+      "name": "Trousers",
+      "color": "#673ab7",
+      "abstract": "",
+      "tag": "MEN_TROUSERS",
+      "original_id": "a2120d3e-3788-e311-84db-00155d5066d7",
+      "order_in_category": 2
+    },
+    {
+      "category": "MEN",
+      "name": "Jeans",
+      "abstract": "",
+      "tag": "MEN_JEANS",
+      "original_id": "c110fdc1-8dd0-e311-b297-00155d5066d7",
+      "order_in_category": 3
+    },
+    {
+      "category": "MEN",
+      "name": "Shoes",
+      "color": "#795548",
+      "abstract": "",
+      "tag": "MEN_SHOES",
+      "original_id": "20c32a95-d3d0-e311-b197-00155d5066d7",
+      "order_in_category": 4
+    },
+    {
+      "category": "MEN",
+      "name": "Ethnic",
+      "abstract": "",
+      "tag": "MEN_ETHNIC",
+      "original_id": "08e32eae-a487-e311-84db-00155d5066d7",
+      "order_in_category": 5
+    },
+
+    {
+      "category": "ELECTRONICS",
+      "name": "Mobiles",
+      "abstract": "",
+      "tag": "ELECTRONICS_MOBILE",
+      "original_id": "09e42eae-a487-e311-84db-00155d5066d7",
+      "order_in_category": 1
+    },
+    {
+      "category": "ELECTRONICS",
+      "name": "Refrigerator",
+      "color": "#8e24aa",
+      "abstract": "",
+      "tag": "ELECTRONICS_REFRIGERATOR",
+      "original_id": "d478f7fb-3688-e311-84db-00155d5066d7",
+      "order_in_category": 2
+    },
+    {
+      "category": "ELECTRONICS",
+      "name": "Washing Machines",
+      "abstract": "",
+      "tag": "ELECTRONICS_WASHINGMACHINE",
+      "original_id": "00ca0d28-d3d0-e311-b297-00155d0066d7",
+      "order_in_category": 4
+    },
+    {
+      "category": "ELECTRONICS",
+      "name": "Air Conditioners",
+      "abstract": "",
+      "tag": "ELECTRONICS_AC",
+      "original_id": "c496b215-d9d0-e311-b297-00155d5066d7",
+      "order_in_category": 5
+    },
+    {
+      "category": "KIDS",
+      "name": "T Shirts",
+      "color": "#c3570b",
+      "abstract": "",
+      "tag": "KIDS_TSHIRTS",
+      "original_id": "06a7df80-d3d0-e311-b297-00155d5066d7",
+      "order_in_category": 1
+    },
+    {
+      "category": "KIDS",
+      "name": "Jeans",
+      "color": "#00897b",
+      "abstract": "",
+      "tag": "KIDS_JEANS",
+      "original_id": "f4a54986-3688-e311-84db-00155d5066d7",
+      "order_in_category": 2
+    },
+    {
+      "category": "KIDS",
+      "name": "Dresses",
+      "color": "#0d904f",
+      "abstract": "",
+      "tag": "KIDS_DRESSES",
+      "original_id": "0eedf9a6-1688-e311-84db-00155d5066d7",
+      "order_in_category": 3
+    },
+    {
+      "category": "KIDS",
+      "name": "Footwear",
+      "color": "#ad1457",
+      "abstract": "",
+      "tag": "KIDS_FOOTWEAR",
+      "original_id": "a1305602-3788-e391-84db-00155d5066d7",
+      "order_in_category": 4
+    }
+  ],
+  "top_tags": [
+    {
+      "category_id": 10,
+      "name": "Women",
+      "category": "WOMEN",
+      "color": "#ce4319",
+      "abstract": "",
+      "original_id": "aea61daf-3688-e311-84db-00155d5066d1",
+      "order_in_category": 1
+
+    },{
+      "category_id": 11,
+      "name": "Men",
+      "category": "MEN",
+      "color": "#ce4319",
+      "abstract": "",
+      "original_id": "aea61daf-3688-e311-84db-00155d5066d2",
+      "order_in_category": 2
+    },{
+      "category_id": 12,
+      "name": "Kids",
+      "category": "KIDS",
+      "color": "#ce4319",
+      "abstract": "",
+      "original_id": "aea61daf-3688-e311-84db-00155d5066d3",
+      "order_in_category": 3
+    },{
+      "category_id": 13,
+      "name": "Electronics",
+      "category": "Electronics",
+      "color": "#ce4319",
+      "abstract": "",
+      "original_id": "aea61daf-3688-e311-84db-00155d5066d4",
+      "order_in_category": 4
+    }
+  ],
+  "presentations": [
+    {
+      "title": "WOMEN_Trousers",
+      "description": "Trousers are basically an office wear and are popular with corporate women. They are best suited with a formal blouse and shirt. Cropped trousers are suitable for most body types and the best part is you can pair them with anything and everything. For a more glam look, you can pair it up with sheer tops and blouses.",
+      "photoUrl": "http://st.mngbcn.com/rcs/pics/static/T5/fotos/outfit/S6/51043545_92-99999999_01.jpg",
+      "url": "https://www.google.com/events/io",
+      "mainTag": "WOMEN_TROUSERS",
+      "id": "__firstone__",
+      "tags": [
+        "WOMEN_TROUSERS"
+      ],
+      "mainTag": "WOMEN_DRESSES",
+      "id": "5h5915de-0ce1-e311-b297-00155d5034427",
+      "order_in_category": 1,
+      "type": 1
+
+    },
+    {
+      "title": "WOMEN_DRESSES" ,
+      "description": " Sheath Dresses flatter your figure type. This is almost a staple, works from day to night so go pick a few in black, navy blue, slate grey or maroon.",
+      "photoUrl": "http://g.nordstromimage.com/imagegallery/store/product/Large/4/_11246064.jpg",
+      "mainTag": "WOMEN_DRESSES",
+      "title": "DEEP V Neck",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "id": "5e5915de-0ce1-e311-b297-00155d5454545",
+      "tags": [
+        "WOMEN_DRESSES"
+      ],
+      "mainTag": "WOMEN_DRESSES",
+      "id": "5g5915de-0ce1-e311-b297-00155d5034427",
+      "order_in_category": 2,
+      "type": 1
+
+    },
+    {
+      "title": "MEN_SHIRTS" ,
+      "description": "Button-down shirts are casual but classy. They are made with a woven material and can be dressed down by leaving them untucked, or they can be dressed up by tucking them in with a belt. Button down shirts can be worn with casual or semi-formal pants.",
+
+      "photoUrl": "http://media.kohlsimg.com/is/image/kohls/2343979_Morning_Sky_Blue?wid=1000&hei=1000&op_sharpen=1",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "tags": [
+        "MEN_SHIRTS"
+      ],
+      "mainTag": "MEN_SHIRTS",
+      "id": "5e5915de-0ce1-e311-b297-00155d5034427",
+      "order_in_category": 3,
+      "type": 1
+    },
+    {
+      "description": "Chinos are NOT the same as khakis although they are commonly mistaken to be. Chinos are made from more synthetic materials, have a slight sheen to them. They are slightly more formal than khakis",
+      "title": "MEN_TROUSERS",
+      "photoUrl": "http://assets.trendin.com/img/app/product/7/75477-185068.jpg",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "tags": [
+        "MEN_TROUSERS"
+      ],
+      "mainTag": "MEN_DRESSES",
+      "id": "5e5945de-0ce1-e311-b297-00155d5066422",
+      "order_in_category": 4,
+      "type": 1
+    },
+    {
+      "description": "Simple cut, though adornments can be elaborate; sleeves, which are hemmed, fall straight to the wrist; side seams allow for ease of movement; does not have a collar. Whilst Akin to a traditional kurta, though modern kurtas do tend to have collars which are referred to as Mandarin collars",
+      "title": "MEN_ETHNIC",
+      "photoUrl": "http://www.fabindia.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/0/20150925-fabindia-cotton-cambric-printed-long-kurta-f-blue.jpg",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "tags": [
+        "MEN_ETHNIC"
+      ],
+      "mainTag": "MEN_ETHNIC",
+      "id": "5e5915de-0ce1-f311-b297-00155d506634",
+      "order_in_category": 5,
+      "type": 1
+    },
+    {
+      "description": "The cap-toe is the dressiest and most popular of all the business shoe styles. It looks best when worn with the more serious suit fabrics and styles. If you get one in brown, wear with navy suit, or an earth-toned suit of olive, brown or tan. Black is fine with all of the serious dark colors of gray and navy but not at all with any of the earth tones. Cordovan is the one color that seems to go with everything except black – and is understood everywhere.",
+      "photoUrl": "http://g.nordstromimage.com/imagegallery/store/product/Large/7/_8550847.jpg",
+      "title": "MEN_FOOTWEAR",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "tags": [
+        "MEN_FOOTWEAR"
+      ],
+      "mainTag": "MEN_FOOTWEAR",
+      "id": "5e5915de-0ce1-e361-b297-00155d506645",
+      "order_in_category": 6,
+      "type": 1
+    }
+
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "Louis Philippe",
+      "logo_url": "http://www.louisphilippe.com/wp-content/themes/lp/images/lp-logo.png",
+      "tagline": "Passion Drives Excellence.",
+      "tags": [
+        "MEN_FOOTWEAR",
+        "MEN_SHIRTS",
+        "MEN_DRESSES",
+        "MEN_TROUSERS",
+        "MEN_JEANS"
+      ],
+      "order_in_category": 1,
+      "type": 1
+    },
+    {
+      "id": 2,
+      "name": "Jack & Jones",
+      "logo_url": "http://www.chestertourist.com/2%5Clogo_jackandjones.jpg",
+      "tagline": "JACK",
+      "tags": [
+        "MEN_JEANS",
+        "WOMEN_Jeans",
+        "WOMEN_TEES",
+        "MEN_SHIRTS",
+        "MEN_TEES"
+      ],
+      "order_in_category": 2,
+      "type": 1
+    },
+    {
+      "id": 3,
+      "name": "MANGO",
+      "logo_url": "http://www.underconsideration.com/brandnew/archives/mango_logo_detail.png",
+      "tagline": "MANGO",
+      "tags": [
+        "WOMEN_TEES",
+        "WOMEN_DRESSES",
+        "WOMEN_Jeans",
+        "WOMEN_Footwear",
+        "WOMEN_TROUSERS",
+        "MEN_TROUSERS",
+        "MEN_SHIRTS"
+      ],
+      "order_in_category": 3,
+      "type": 1
+    },
+    {
+      "id": 4,
+      "name": "BIBA",
+      "logo_url": "http://www.southavenuemall.com/imagegallery/52_biba%20logo.jpg",
+      "tagline": "BIBA",
+      "tags": [
+        "WOMEN_ETHNIC",
+        "KIDS_ETHNIC"
+      ],
+      "order_in_category": 4,
+      "type": 1
+    },
+
+    { "id": 5,
+      "name": "Steve Madden",
+      "logo_url": "http://www.613style.com/wp-content/uploads/2014/08/Steve-madden-Logo.jpg",
+      "tagline": "Steve Madden",
+      "tags": [
+        "WOMEN_Footwear",
+        "MEN_FOOTWEAR",
+        "MEN_ACCESSORIES",
+        "WOMEN_ACCESSORIES"
+
+      ],
+      "order_in_category": 5,
+      "type": 1
+    }
+
+  ],
+  "updates": [
+    {
+      "title": "SHOES",
+      "description": "New addition of Formal Boots for the winters",
+      "photoUrl": "http://assets.trendin.com/img/app/product/6/67441-160988.jpg",
+      "url": "https://www.google.com/events/io",
+      "mainTag": "MEN_Footwear",
+      "id": "__firstone__",
+      "brand_id": 1,
+      "tags": [
+        "MEN_Footwear"
+      ],
+      "type": 1
+
+    },
+    {
+      "description": "New In - Autumn 15",
+      "photoUrl": "http://st.mngbcn.com/rcs/pics/static/T5/fotos/S6/51087569_99.jpg",
+      "title": "DRESS",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "tags": [
+        "WOMEN_DRESSES",
+        "WOMEN_Footwear",
+        "WOMEN_ACCESSORIES"
+      ],
+      "mainTag": "WOMEN_DRESSES",
+      "id": "5e5915de-0ce1-e311-b297-00155d9454545",
+      "brand_id": 3,
+      "order_in_category": 2,
+      "type": 1
+    },
+    {
+      "description": "Gear up for this Festive Season",
+      "title": "Ethnic Wear",
+      "photoUrl": "http://cdn2.biba.in/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/k/skd_3848bgepnk-f_1.jpg",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "tags": [
+        "WOMEN_ETHNIC"
+      ],
+      "mainTag": "WOMEN_ETHNIC",
+      "id": "5e5915de-0ce1-e311-b207-00155d5034427",
+      "order_in_category": 3,
+      "brand_id": 4,
+      "type": 1
+    },
+    {
+      "description": "The trendy New Boho for Autumn 15",
+      "title": "SHOES",
+      "photoUrl": "http://www.stevemadden.in/media/catalog/product/cache/1/image/358x358/9df78eab33525d08d6e5fb8d27136e95/g/e/getta_742.jpg",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "tags": [
+        "WOMEN_Footwear"
+      ],
+      "mainTag": "WOMEN_Footwear",
+      "id": "5e5915de-0ce1-e391-b297-00155d5066422",
+      "order_in_category": 4,
+      "brand_id": 5,
+      "type": 1
+    },
+    {
+      "description": "Layer Up For Autumn: The A/W 15 Collection",
+      "title": "Winter Essentials",
+      "photoUrl": "http://demandware.edgesuite.net/aagb_prd/on/demandware.static/-/Sites-pim-catalog/default/dwf0bb715a/pim-static/large/12092219_DarkGrey_458572_001_ProductLarge.jpg",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "tags": [
+        "MEN_ACCESSORIES",
+        "WOMEN_Jeans",
+        "MEN_JEANS"
+      ],
+      "mainTag": "MEN_JEANS",
+      "id": "5e5915de-0ce1-e311-b297-07155d506634",
+      "order_in_category": 5,
+      "brand_id": 2,
+      "type": 1
+    },
+    {
+      "description": "Festive Collection by Rohit Bal",
+      "photoUrl": "http://cdn2.biba.in/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/b/rb4331ind-f.jpg",
+      "title": "Anarkali Suit Set by Rohit Bal",
+      "url": "https://www.google.com/events/io/schedule/session/5e5915de-0ce1-e311-b297-00155d5066d7",
+      "tags": [
+        "WOMEN_ETHNIC"
+      ],
+      "mainTag": "WOMEN_ETHNIC",
+      "id": "5e5915de-0ce1-e318-b297-00155d506645",
+      "order_in_category": 6,
+      "brand_id": 4,
+      "type": 1
+    }
+
+  ],
+  "feeds": [
+    {
+      "id": 1,
+      "title": "Post",
+      "description": "Upto 20% off at select items in Select Citywalk!!",
+      "likes": 1,
+      "typepost": 1,
+      "order_in_category": 1,
+      "image_url": "/system/posts/images/000/000/001/medium/feed_post_1.jpg?1444402794",
+      "username": "Shivani",
+      "user_id": 2,
+      "storename": "Ghungroo Electronics\t",
+      "store_id": 1,
+      "categoryname": "Electronics",
+      "category_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Bought",
+      "description": "Flat 40% off at select items. I bought an amazing dress for just Rs. 2800!",
+      "likes": 4,
+      "typepost": 2,
+      "order_in_category": 2,
+      "image_url": "/system/posts/images/000/000/002/medium/post2.jpg?1444402854",
+      "username": "Ragini",
+      "user_id": 3,
+      "storename": "Shop Electronics",
+      "store_id": 2,
+      "categoryname": "Electronics",
+      "category_id": 1
+    },
+    {
+      "id": 3,
+      "title": "H\u0026M India Launch",
+      "description": "Grand opening of H\u0026M at Select Citywalk. Loved Ranbir \u0026 Lisa's act. Lucky to have been there.",
+      "likes": 3,
+      "typepost": 3,
+      "order_in_category": 3,
+      "image_url": "/system/posts/images/000/000/003/medium/post3.jpg?1444402914",
+      "username": "Apporva",
+      "user_id": 4,
+      "storename": "Shop Electronics",
+      "store_id": 2,
+      "categoryname": "TV",
+      "category_id": 3
+    },
+    {
+      "id": 4,
+      "title": "Bought",
+      "description": "Shopped for 8k \u0026 got a voucher for 3k. So shopped more for the enitre family!",
+      "likes": 5,
+      "typepost": 2,
+      "order_in_category": 4,
+      "image_url": "/system/posts/images/000/000/004/medium/post4.jpg?1444403016",
+      "username": "Ishani Parekh",
+      "user_id": 5,
+      "storename": "Ghungroo Electronics\t",
+      "store_id": 1,
+      "categoryname": "Air Conditioner",
+      "category_id": 2
+    },
+    {
+      "id": 5,
+      "title": "Bought",
+      "description": "Got a shirt free at USPA on purchase of 7000. #USPA #USPASelfie #Selfie",
+      "likes": 3,
+      "typepost": 2,
+      "order_in_category": 5,
+      "image_url": "/system/posts/images/000/000/005/medium/post5.jpg?1444402993",
+      "username": "Abhay Sharma",
+      "user_id": 6,
+      "storename": "Ghungroo Electronics\t",
+      "store_id": 1,
+      "categoryname": "Air Conditioner",
+      "category_id": 2
+    }
+  ]
+}

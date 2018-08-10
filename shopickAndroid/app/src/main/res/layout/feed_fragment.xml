@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_relative"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <!--<RelativeLayout
+        android:id="@+id/list_feed_container"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/gray_background"
+        android:paddingTop="@dimen/spinner_layout_height"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        >-->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/list_feed_container"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/gray_background"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_feed"
+            android:background="@color/gray_background"
+            android:layout_width="match_parent"
+            android:layout_marginRight="1.0sp"
+            android:layout_marginLeft="1.0sp"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            ></android.support.v7.widget.RecyclerView>
+
+        <!--First button as menu button-->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <include layout="@layout/list_all_brands_button"/>
+        </android.support.design.widget.AppBarLayout>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+      <com.acquire.shopick.ui.widget.FloatingActionMenu
+        android:id="@+id/fab_menu_feed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:layout_gravity="bottom|end">
+
+      <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_main_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"
+            fab:fabSize="normal"
+            fab:borderWidth="0dp"
+            fab:elevation="6dp"
+            fab:backgroundTint="@color/accentPrimary"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Bought"
+            android:src="@drawable/ic_add_shopping_cart_white_18dp"
+            android:paddingBottom="5dp"
+            fab:fabSize="mini"
+            fab:backgroundTint="@color/accentPrimary" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Liked"
+            android:src="@drawable/ic_favorite_white_18dp"
+            android:paddingBottom="5dp"
+            fab:borderWidth="0dp"
+            fab:elevation="6dp"
+            fab:fabSize="mini"
+            fab:backgroundTint="@color/accentPrimary"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_browser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Discovered Offer"
+            android:src="@drawable/ic_local_offer_white_18dp"
+            android:paddingBottom="5dp"
+            fab:borderWidth="0dp"
+            fab:elevation="6dp"
+            fab:fabSize="mini"
+            fab:backgroundTint="@color/accentPrimary"/>
+
+    </com.acquire.shopick.ui.widget.FloatingActionMenu>
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+<com.acquire.shopick.ui.widget.ProgressView
+android:id="@+id/progress_feed"
+android:layout_centerHorizontal="true"
+android:layout_centerVertical="true"
+android:layout_marginTop="150dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/rotate"
+app:frameCount="8"
+app:duration="1000"/>
+    </RelativeLayout>

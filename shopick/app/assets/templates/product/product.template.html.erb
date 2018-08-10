@@ -1,0 +1,85 @@
+<div ng-controller="ProductCtrl" >
+  <md-content  layout="column">
+  <md-progress-linear  md-mode="indeterminate" ng-hide="!activated"></md-progress-linear>
+  <md-card >
+    <div class="wraptocenter">
+      <span></span>
+      <img class="product_image" src={{product.productImageUrl}} border="1"/>
+    </div>
+     <md-card-actions layout="row" layout-align="space-around center">
+     <md-button>
+      <ng-md-icon icon="favorite" style="fill: grey" ></ng-md-icon> 
+      Like
+     </md-button>
+     <md-button>
+       <ng-md-icon icon="search" style="fill: grey" ></ng-md-icon> 
+       Locate
+     </md-button>
+     <md-button>
+        <ng-md-icon icon="share" style="fill: grey" ></ng-md-icon> 
+       Share
+     </md-button>
+   </md-card-actions>
+  </md-card>
+  <md-card>
+      <md-card-title >
+      <md-card-title-text layout-align="center start">
+        <span class="md-headline"> &nbsp;&nbsp;  {{product.name}}</span>
+        <span class="md-subhead"> &nbsp;&nbsp; {{product.desc}}</span>
+      </md-card-title-text>
+    </md-card-title>
+  </md-card>
+
+    <md-card>
+      <md-card-title >
+      <md-card-title-media>
+        <md-media-md>
+          <img  src={{product.stores[0].brand_logo}}></img>
+        </md-media-md>
+
+      </md-card-title-media>
+      <md-card-title-text layout-align="center start">
+        <span class="md-headline"> &nbsp;&nbsp;  {{product.stores[0].name}}</span>
+        <span class="md-subhead"> &nbsp;&nbsp; {{product.stores[0].address}}</span>
+      </md-card-title-text>
+    </md-card-title>
+  </md-card>
+
+      <md-card>
+      <md-card-title >
+      <md-card-title-text layout-align="center start">
+        <span class="md-headline"> &nbsp;&nbsp;  Similar Products: </span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-content>
+    <md-grid-list
+        md-cols="1" md-cols-sm="2" md-cols-md="2" md-cols-gt-md="2"
+        md-row-height-gt-md="1:2" md-row-height="1:2"
+        md-gutter="4px" md-gutter-gt-sm="4px" >
+        <md-grid-tile ng-repeat="product in product.similar_products"
+                  md-rowspan="1"
+                  md-colspan="1"
+                  md-colspan-sm="1"
+                  md-colspan-xs="1">
+          <md-card ng-click=openProduct(product.globalID)>
+              <div class="wraptocenter">
+                <span></span>
+                <img class="product_image" src={{product.productImageUrl}} border="1"/>
+              </div>
+              <md-card-title >
+                <md-card-title-text layout-align="center center">
+                  <span class="md-headline"> &nbsp;&nbsp; {{product.brand_name}}</span>
+                  <span class="md-subhead"> &nbsp;&nbsp; {{product.name}}</span>
+                </md-card-title-text>
+              </md-card-title>
+            </md-card>
+      </md-grid-tile>
+    </md-grid-list>
+
+    </md-content>
+  </md-card>
+
+
+
+</md-content>
+</div>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/element_spacing_normal"
+    android:layout_height="wrap_content">
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:background="@color/material_white"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:iosched="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp">
+<ImageView
+    android:id="@+id/logo_brand_image"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+
+    android:background="@drawable/placeholder_verticle"/>
+    <TextView
+        android:id="@+id/earnPicks_title"
+        style="@style/CategoryItem.Title"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/abc_action_bar_default_padding_material"
+        android:layout_toRightOf="@+id/logo_brand_image"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/earn_picks"
+        android:textSize="16sp"
+        android:textColor="@color/no_track_branding_session_tile_overlay" />
+
+            <TextView
+                android:id="@+id/earnPicks_description"
+                style="@style/TextBody"
+                android:textColor="@color/body_text_1"
+                android:padding="@dimen/abc_action_bar_default_padding_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/logo_brand_image"
+                android:layout_below="@id/earnPicks_title"
+                android:text="@string/earn_picks"/>
+
+    <TextView
+        style="@style/FeedItem.Title"
+        android:id="@+id/earnPicks_given"
+        android:layout_width="fill_parent"
+        android:padding="@dimen/abc_action_bar_default_padding_material"
+        android:text="@string/earn_picks"
+        android:layout_toRightOf="@+id/logo_brand_image"
+        android:layout_below="@id/earnPicks_description"
+        android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

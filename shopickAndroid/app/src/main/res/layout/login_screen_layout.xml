@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_bottom_id">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/intro_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <com.viewpagerindicator.CirclePageIndicator
+        android:padding="1dip"
+        android:layout_gravity="bottom"
+        android:id="@+id/intro_screens"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/gradient_line"
+        app:fillColor="@color/theme_primary"
+        app:pageColor="@color/gray_background"
+        app:strokeColor="@color/theme_primary_dark"
+        />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/layout_bottom_id"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/abc_dialog_padding_top_material"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/skip_button"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="@dimen/text_size_xsmall"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="end"
+            android:text="@string/skip_login"/>
+
+        <TextView
+            style="@style/FeedItem.Title"
+            android:inputType="textCapCharacters"
+            android:padding="@dimen/abc_action_bar_default_padding_material"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/text_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_text_title"/>
+
+        <TextView
+            style="@style/FeedItem.Snippet"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/abc_action_bar_default_padding_material"
+            android:id="@+id/text_sign_up_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_text_snippet"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <com.facebook.login.widget.LoginButton
+                android:layout_weight="1"
+                android:id="@+id/login_button"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="0dp" />
+
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/FeedItem.Snippet"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/abc_action_bar_default_padding_material"
+            android:id="@+id/text_sign_up_no_post"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_text_no_post"/>
+
+    </LinearLayout>
+    <com.acquire.shopick.ui.widget.ProgressView
+        android:id="@+id/progress_login"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rotate"
+        app:frameCount="8"
+        app:duration="1000"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

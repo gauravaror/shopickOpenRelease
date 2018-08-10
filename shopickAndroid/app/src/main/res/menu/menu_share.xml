@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/whatsapp_share" android:title="@string/whatsapp_share" android:icon="@drawable/share_whatsapp"/>
+    <item android:id="@+id/facebook_share" android:title="@string/facebook_share" android:icon="@drawable/share_facebook"/>
+    <item android:id="@+id/twitter_share" android:title="@string/twitter_share" android:icon="@drawable/share_twitter"/>
+    <item android:id="@+id/message_share" android:title="@string/message_share" android:icon="@drawable/share_hangouts"/>
+    <item android:id="@+id/instagram_share" android:title="@string/instagram_share" android:icon="@drawable/share_instagram"/>
+    <item android:id="@+id/pinterest_share" android:title="@string/pinterest_share" android:icon="@drawable/share_pinterest"/>
+    <item android:id="@+id/otherapps_share" android:title="@string/otherapps_share" android:icon="@drawable/share__button_share"/>
+</menu>

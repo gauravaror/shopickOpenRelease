@@ -1,0 +1,627 @@
+   
+<% content_for :head do %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "findanythingbody", media: "all", "data-turbolinks-track" => true %>
+
+<meta property="fb:app_id" content="924859280931985" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ask us to locate any design or product that you are looking for #FindAnything #Delhi"/>
+<meta property="og:description" content="Ask us to locate any design or product that you are looking for or even an advice or suggestion from our experts for your retail needs. "/>
+<meta property="og:url" content="http://shopick.co.in/findanything" />
+<meta property="og:site_name" content="shopick.co.in" />
+<meta property="og:image" content="http://shopick.co.in/bannerfindanything.jpg"/>
+<meta property="og:image:url" content="http://shopick.co.in/bannerfindanything.jpg"/>
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:site" content="@shopickapp">
+<meta name="twitter:creator" content="@shopickapp">
+<meta name="twitter:title" content="Ask us to locate any design or product that you are looking for #FindAnything #Delhi @shopickapp">
+<meta name="twitter:description" content="We will locate any product you are looking for around your area to make your shopping experience wonderful.">
+<meta name="twitter:image" content="http://shopick.co.in/banner.jpg" >
+<%= javascript_include_tag "angular/angular.min", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "angular-route/angular-route.min", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "jquery-1.10.2.min", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "rails.validations", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "rails.validations.simple_form", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "jquery.geocomplete.min", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "notify", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "modernizr", "data-turbolinks-track" => true %>
+
+
+<% end %>
+
+
+   <div class="headerfindanything">	
+    <div class="header-top">
+       <div class="wrap"> 
+	         <div class="logo">
+				<a href="/"><%= image_tag "logo.png" %></a>
+			 </div>
+			 		<div class="cssmenu findanything">
+					  <h2>#FindAnything</h2> 
+				    </div>			
+
+		    <div class="clear"></div>
+	   </div>
+	 </div>
+	        <div class="header-bottom" id="section-1">
+				<div class="wrap">
+   				</div>
+  			</div>
+	</div>
+				<div  id="findform" class="findanything-wrapper" >
+				<div class="container-fluid" >
+				<div class="row text-center">
+				<div class="col-xs-12">
+						<section class="cd-intro">
+							<h1 class="cd-headline letters type">
+								<span>Our Operations Team is Heavylifting for you</span>
+								<br>
+								<br>
+									<div id="anim">┗(-_-)┛</div>
+							</h1>
+						</section>
+
+				</div>
+
+					</div>
+					    <div class="container-fluid"  ng-controller="myCtrl">
+					      <div class="row search-box">
+							<%= simple_form_for @findanything, :url => completefindanything_path, :method => :post , validate: true, html: {multipart: true} do |f| %>
+							 		<div class="col-lg-6  col-sm-3 col-xs-12">
+							 		 Please provide your Phone no., So that we can reach you at lightening speed
+							 		</div>
+							  <div class="col-lg-3  col-sm-3 col-xs-12">
+							  <%= f.input :phoneno, class: 'form-control', placeholder: 'Phone Number', label: false , required: true%>
+							  </div>
+							<%= f.input :locality, id: 'offer_location',:as => :hidden, class: 'form-control geosuggest__input', placeholder: 'where to find!' , label: false, input_html: { "ng-model" => "location_", "ng-focus" => "focused=true", "ng-blur" => "focused=false"} %>
+							<%= f.input :description, class: 'form-control',:as => :hidden,   placeholder: 'What and where you want to find' , label: false , required: true%>
+							<%= f.input :globalID, class: 'form-control',:as => :hidden,   placeholder: 'globalID' , label: false , required: true%>
+
+
+
+ 							  <div class="col-lg-2  col-sm-3 col-xs-12">
+							  <%= f.button :submit, label: "Submit",  class: 'btn btn-primary btn-lg' , value: "#FindAnything"  %>
+ 							  </div>
+ 							  <%end%>
+
+						</div>
+						</div>
+					</div>
+				</div>
+
+	<div class="text_how">
+	 <h2> Heavylifting</h2>
+	 </div>
+
+	<section id="cd-timeline">
+	<div class="cd-timeline-block">
+		<div class="cd-timeline-img">
+			<%= image_tag "final.png" %>
+		</div> <!-- cd-timeline-img -->
+ 
+		<div class="cd-timeline-content">
+			<h2>Heavylifting for You</h2>
+			<p>Our operations team is visiting stores near you, get the required information & resolve your query.</p>
+			<a href="#findform" class="cd-read-more">#FindAnything</a>
+			<span class="cd-date">Second Step</span>
+		</div> <!-- cd-timeline-content -->
+	</div>
+
+		<div class="cd-timeline-block">
+		<div class="cd-timeline-img">
+			<%= image_tag "features-img3.png" %>
+		</div> <!-- cd-timeline-img -->
+ 
+		<div class="cd-timeline-content">
+			<h2>Eager to Serve you with Best Results</h2>
+			<p>We will update you with the result & other details at the earliest, so that you can go & shop!.</p>
+			<a href="#findform" class="cd-read-more">#FindAnything</a>
+			<span class="cd-date">Third Step</span>
+		</div> <!-- cd-timeline-content -->
+	</div>
+
+</section>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP6e0R4FPpiEd5L-nf_Nxpw60WZ8qBkjE&v=3.exp&libraries=places"></script>
+      <script type="text/javascript">
+	$("#findanything_locality").geocomplete();
+	$(document).ready(function($){
+		console.log("time ready");
+	var timelineBlocks = $('.cd-timeline-block'),
+		offset = 0.8;
+
+	//hide timeline blocks which are outside the viewport
+	hideBlocks(timelineBlocks, offset);
+
+	//on scolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		(!window.requestAnimationFrame) 
+			? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
+			: window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+	});
+
+	function hideBlocks(blocks, offset) {
+		blocks.each(function(){
+			( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+		});
+	}
+
+	function showBlocks(blocks, offset) {
+		blocks.each(function(){
+			( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+		});
+	}
+});
+	jQuery(document).ready(function($){
+	//set animation timing
+	var animationDelay = 2500,
+		//loading bar effect
+		barAnimationDelay = 3800,
+		barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
+		//letters effect
+		lettersDelay = 50,
+		//type effect
+		typeLettersDelay = 150,
+		selectionDuration = 500,
+		typeAnimationDelay = selectionDuration + 800,
+		//clip effect 
+		revealDuration = 600,
+		revealAnimationDelay = 1500;
+	
+	initHeadline();
+	
+
+	function initHeadline() {
+		//insert <i> element for each letter of a changing word
+		singleLetters($('.cd-headline.letters').find('b'));
+		//initialise headline animation
+		animateHeadline($('.cd-headline'));
+	}
+
+	function singleLetters($words) {
+		$words.each(function(){
+			var word = $(this),
+				letters = word.text().split(''),
+				selected = word.hasClass('is-visible');
+			for (i in letters) {
+				if(word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
+				letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
+			}
+		    var newLetters = letters.join('');
+		    word.html(newLetters).css('opacity', 1);
+		});
+	}
+
+	function animateHeadline($headlines) {
+		var duration = animationDelay;
+		$headlines.each(function(){
+			var headline = $(this);
+			
+			if(headline.hasClass('loading-bar')) {
+				duration = barAnimationDelay;
+				setTimeout(function(){ headline.find('.cd-words-wrapper').addClass('is-loading') }, barWaiting);
+			} else if (headline.hasClass('clip')){
+				var spanWrapper = headline.find('.cd-words-wrapper'),
+					newWidth = spanWrapper.width() + 10
+				spanWrapper.css('width', newWidth);
+			} else if (!headline.hasClass('type') ) {
+				//assign to .cd-words-wrapper the width of its longest word
+				var words = headline.find('.cd-words-wrapper b'),
+					width = 0;
+				words.each(function(){
+					var wordWidth = $(this).width();
+				    if (wordWidth > width) width = wordWidth;
+				});
+				headline.find('.cd-words-wrapper').css('width', width);
+			};
+
+			//trigger animation
+			setTimeout(function(){ hideWord( headline.find('.is-visible').eq(0) ) }, duration);
+		});
+	}
+
+	function hideWord($word) {
+		var nextWord = takeNext($word);
+		
+		if($word.parents('.cd-headline').hasClass('type')) {
+			var parentSpan = $word.parent('.cd-words-wrapper');
+			parentSpan.addClass('selected').removeClass('waiting');	
+			setTimeout(function(){ 
+				parentSpan.removeClass('selected'); 
+				$word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
+			}, selectionDuration);
+			setTimeout(function(){ showWord(nextWord, typeLettersDelay) }, typeAnimationDelay);
+		
+		} else if($word.parents('.cd-headline').hasClass('letters')) {
+			var bool = ($word.children('i').length >= nextWord.children('i').length) ? true : false;
+			hideLetter($word.find('i').eq(0), $word, bool, lettersDelay);
+			showLetter(nextWord.find('i').eq(0), nextWord, bool, lettersDelay);
+
+		}  else if($word.parents('.cd-headline').hasClass('clip')) {
+			$word.parents('.cd-words-wrapper').animate({ width : '2px' }, revealDuration, function(){
+				switchWord($word, nextWord);
+				showWord(nextWord);
+			});
+
+		} else if ($word.parents('.cd-headline').hasClass('loading-bar')){
+			$word.parents('.cd-words-wrapper').removeClass('is-loading');
+			switchWord($word, nextWord);
+			setTimeout(function(){ hideWord(nextWord) }, barAnimationDelay);
+			setTimeout(function(){ $word.parents('.cd-words-wrapper').addClass('is-loading') }, barWaiting);
+
+		} else {
+			switchWord($word, nextWord);
+			setTimeout(function(){ hideWord(nextWord) }, animationDelay);
+		}
+	}
+
+	function showWord($word, $duration) {
+		if($word.parents('.cd-headline').hasClass('type')) {
+			showLetter($word.find('i').eq(0), $word, false, $duration);
+			$word.addClass('is-visible').removeClass('is-hidden');
+
+		}  else if($word.parents('.cd-headline').hasClass('clip')) {
+			$word.parents('.cd-words-wrapper').animate({ 'width' : $word.width() + 10 }, revealDuration, function(){ 
+				setTimeout(function(){ hideWord($word) }, revealAnimationDelay); 
+			});
+		}
+	}
+
+	function hideLetter($letter, $word, $bool, $duration) {
+		$letter.removeClass('in').addClass('out');
+		
+		if(!$letter.is(':last-child')) {
+		 	setTimeout(function(){ hideLetter($letter.next(), $word, $bool, $duration); }, $duration);  
+		} else if($bool) { 
+		 	setTimeout(function(){ hideWord(takeNext($word)) }, animationDelay);
+		}
+
+		if($letter.is(':last-child') && $('html').hasClass('no-csstransitions')) {
+			var nextWord = takeNext($word);
+			switchWord($word, nextWord);
+		} 
+	}
+
+	function showLetter($letter, $word, $bool, $duration) {
+		$letter.addClass('in').removeClass('out');
+		
+		if(!$letter.is(':last-child')) { 
+			setTimeout(function(){ showLetter($letter.next(), $word, $bool, $duration); }, $duration); 
+		} else { 
+			if($word.parents('.cd-headline').hasClass('type')) { setTimeout(function(){ $word.parents('.cd-words-wrapper').addClass('waiting'); }, 200);}
+			if(!$bool) { setTimeout(function(){ hideWord($word) }, animationDelay) }
+		}
+	}
+
+	function takeNext($word) {
+		return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+	}
+
+	function takePrev($word) {
+		return (!$word.is(':first-child')) ? $word.prev() : $word.parent().children().last();
+	}
+
+	function switchWord($oldWord, $newWord) {
+		$oldWord.removeClass('is-visible').addClass('is-hidden');
+		$newWord.removeClass('is-hidden').addClass('is-visible');
+	}
+});
+
+
+   jQuery(document).ready(function($){
+	if( $('.floating-labels').length > 0 ) floatLabels();
+
+	function floatLabels() {
+		var inputFields = $('.floating-labels .cd-label').next();
+		inputFields.each(function(){
+			var singleInput = $(this);
+			//check if user is filling one of the form fields 
+			checkVal(singleInput);
+			singleInput.on('change keyup', function(){
+				checkVal(singleInput);	
+			});
+		});
+	}
+
+	function checkVal(inputField) {
+		( inputField.val() == '' ) ? inputField.prev('.cd-label').removeClass('float') : inputField.prev('.cd-label').addClass('float');
+	}
+});
+
+   jQuery(document).ready(function($){
+	var timelines = $('.cd-horizontal-timeline'),
+		eventsMinDistance = 60;
+
+	(timelines.length > 0) && initTimeline(timelines);
+
+	function initTimeline(timelines) {
+		timelines.each(function(){
+			var timeline = $(this),
+				timelineComponents = {};
+			//cache timeline components 
+			timelineComponents['timelineWrapper'] = timeline.find('.events-wrapper');
+			timelineComponents['eventsWrapper'] = timelineComponents['timelineWrapper'].children('.events');
+			timelineComponents['fillingLine'] = timelineComponents['eventsWrapper'].children('.filling-line');
+			timelineComponents['timelineEvents'] = timelineComponents['eventsWrapper'].find('a');
+			timelineComponents['timelineDates'] = parseDate(timelineComponents['timelineEvents']);
+			timelineComponents['eventsMinLapse'] = minLapse(timelineComponents['timelineDates']);
+			timelineComponents['timelineNavigation'] = timeline.find('.cd-timeline-navigation');
+			timelineComponents['eventsContent'] = timeline.children('.events-content');
+
+			//assign a left postion to the single events along the timeline
+			setDatePosition(timelineComponents, eventsMinDistance);
+			//assign a width to the timeline
+			var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
+			//the timeline has been initialize - show it
+			timeline.addClass('loaded');
+
+			//detect click on the next arrow
+			timelineComponents['timelineNavigation'].on('click', '.next', function(event){
+				event.preventDefault();
+				updateSlide(timelineComponents, timelineTotWidth, 'next');
+			});
+			//detect click on the prev arrow
+			timelineComponents['timelineNavigation'].on('click', '.prev', function(event){
+				event.preventDefault();
+				updateSlide(timelineComponents, timelineTotWidth, 'prev');
+			});
+			//detect click on the a single event - show new event content
+			timelineComponents['eventsWrapper'].on('click', 'a', function(event){
+				event.preventDefault();
+				timelineComponents['timelineEvents'].removeClass('selected');
+				$(this).addClass('selected');
+				updateOlderEvents($(this));
+				updateFilling($(this), timelineComponents['fillingLine'], timelineTotWidth);
+				updateVisibleContent($(this), timelineComponents['eventsContent']);
+			});
+
+			//on swipe, show next/prev event content
+			timelineComponents['eventsContent'].on('swipeleft', function(){
+				var mq = checkMQ();
+				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'next');
+			});
+			timelineComponents['eventsContent'].on('swiperight', function(){
+				var mq = checkMQ();
+				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'prev');
+			});
+
+			//keyboard navigation
+			$(document).keyup(function(event){
+				if(event.which=='37' && elementInViewport(timeline.get(0)) ) {
+					showNewContent(timelineComponents, timelineTotWidth, 'prev');
+				} else if( event.which=='39' && elementInViewport(timeline.get(0))) {
+					showNewContent(timelineComponents, timelineTotWidth, 'next');
+				}
+			});
+		});
+	}
+
+	function updateSlide(timelineComponents, timelineTotWidth, string) {
+		//retrieve translateX value of timelineComponents['eventsWrapper']
+		var translateValue = getTranslateValue(timelineComponents['eventsWrapper']),
+			wrapperWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', ''));
+		//translate the timeline to the left('next')/right('prev') 
+		(string == 'next') 
+			? translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth)
+			: translateTimeline(timelineComponents, translateValue + wrapperWidth - eventsMinDistance);
+	}
+
+	function showNewContent(timelineComponents, timelineTotWidth, string) {
+		//go from one event to the next/previous one
+		var visibleContent =  timelineComponents['eventsContent'].find('.selected'),
+			newContent = ( string == 'next' ) ? visibleContent.next() : visibleContent.prev();
+
+		if ( newContent.length > 0 ) { //if there's a next/prev event - show it
+			var selectedDate = timelineComponents['eventsWrapper'].find('.selected'),
+				newEvent = ( string == 'next' ) ? selectedDate.parent('li').next('li').children('a') : selectedDate.parent('li').prev('li').children('a');
+			
+			updateFilling(newEvent, timelineComponents['fillingLine'], timelineTotWidth);
+			updateVisibleContent(newEvent, timelineComponents['eventsContent']);
+			newEvent.addClass('selected');
+			selectedDate.removeClass('selected');
+			updateOlderEvents(newEvent);
+			updateTimelinePosition(string, newEvent, timelineComponents);
+		}
+	}
+
+	function updateTimelinePosition(string, event, timelineComponents) {
+		//translate timeline to the left/right according to the position of the selected event
+		var eventStyle = window.getComputedStyle(event.get(0), null),
+			eventLeft = Number(eventStyle.getPropertyValue("left").replace('px', '')),
+			timelineWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', '')),
+			timelineTotWidth = Number(timelineComponents['eventsWrapper'].css('width').replace('px', ''));
+		var timelineTranslate = getTranslateValue(timelineComponents['eventsWrapper']);
+
+        if( (string == 'next' && eventLeft > timelineWidth - timelineTranslate) || (string == 'prev' && eventLeft < - timelineTranslate) ) {
+        	translateTimeline(timelineComponents, - eventLeft + timelineWidth/2, timelineWidth - timelineTotWidth);
+        }
+	}
+
+	function translateTimeline(timelineComponents, value, totWidth) {
+		var eventsWrapper = timelineComponents['eventsWrapper'].get(0);
+		value = (value > 0) ? 0 : value; //only negative translate value
+		value = ( !(typeof totWidth === 'undefined') &&  value < totWidth ) ? totWidth : value; //do not translate more than timeline width
+		setTransformValue(eventsWrapper, 'translateX', value+'px');
+		//update navigation arrows visibility
+		(value == 0 ) ? timelineComponents['timelineNavigation'].find('.prev').addClass('inactive') : timelineComponents['timelineNavigation'].find('.prev').removeClass('inactive');
+		(value == totWidth ) ? timelineComponents['timelineNavigation'].find('.next').addClass('inactive') : timelineComponents['timelineNavigation'].find('.next').removeClass('inactive');
+	}
+
+	function updateFilling(selectedEvent, filling, totWidth) {
+		//change .filling-line length according to the selected event
+		var eventStyle = window.getComputedStyle(selectedEvent.get(0), null),
+			eventLeft = eventStyle.getPropertyValue("left"),
+			eventWidth = eventStyle.getPropertyValue("width");
+		eventLeft = Number(eventLeft.replace('px', '')) + Number(eventWidth.replace('px', ''))/2;
+		var scaleValue = eventLeft/totWidth;
+		setTransformValue(filling.get(0), 'scaleX', scaleValue);
+	}
+
+	function setDatePosition(timelineComponents, min) {
+		for (i = 0; i < timelineComponents['timelineDates'].length; i++) { 
+		    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
+		    	distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + 2;
+		    timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm*min+'px');
+		}
+	}
+
+	function setTimelineWidth(timelineComponents, width) {
+		var timeSpan = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][timelineComponents['timelineDates'].length-1]),
+			timeSpanNorm = timeSpan/timelineComponents['eventsMinLapse'],
+			timeSpanNorm = Math.round(timeSpanNorm) + 4,
+			totalWidth = timeSpanNorm*width;
+		timelineComponents['eventsWrapper'].css('width', totalWidth+'px');
+		updateFilling(timelineComponents['eventsWrapper'].find('a.selected'), timelineComponents['fillingLine'], totalWidth);
+		updateTimelinePosition('next', timelineComponents['eventsWrapper'].find('a.selected'), timelineComponents);
+	
+		return totalWidth;
+	}
+
+	function updateVisibleContent(event, eventsContent) {
+		var eventDate = event.data('date'),
+			visibleContent = eventsContent.find('.selected'),
+			selectedContent = eventsContent.find('[data-date="'+ eventDate +'"]'),
+			selectedContentHeight = selectedContent.height();
+
+		if (selectedContent.index() > visibleContent.index()) {
+			var classEnetering = 'selected enter-right',
+				classLeaving = 'leave-left';
+		} else {
+			var classEnetering = 'selected enter-left',
+				classLeaving = 'leave-right';
+		}
+
+		selectedContent.attr('class', classEnetering);
+		visibleContent.attr('class', classLeaving).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+			visibleContent.removeClass('leave-right leave-left');
+			selectedContent.removeClass('enter-left enter-right');
+		});
+		eventsContent.css('height', selectedContentHeight+'px');
+	}
+
+	function updateOlderEvents(event) {
+		event.parent('li').prevAll('li').children('a').addClass('older-event').end().end().nextAll('li').children('a').removeClass('older-event');
+	}
+
+	function getTranslateValue(timeline) {
+		var timelineStyle = window.getComputedStyle(timeline.get(0), null),
+			timelineTranslate = timelineStyle.getPropertyValue("-webkit-transform") ||
+         		timelineStyle.getPropertyValue("-moz-transform") ||
+         		timelineStyle.getPropertyValue("-ms-transform") ||
+         		timelineStyle.getPropertyValue("-o-transform") ||
+         		timelineStyle.getPropertyValue("transform");
+
+        if( timelineTranslate.indexOf('(') >=0 ) {
+        	var timelineTranslate = timelineTranslate.split('(')[1];
+    		timelineTranslate = timelineTranslate.split(')')[0];
+    		timelineTranslate = timelineTranslate.split(',');
+    		var translateValue = timelineTranslate[4];
+        } else {
+        	var translateValue = 0;
+        }
+
+        return Number(translateValue);
+	}
+
+	function setTransformValue(element, property, value) {
+		element.style["-webkit-transform"] = property+"("+value+")";
+		element.style["-moz-transform"] = property+"("+value+")";
+		element.style["-ms-transform"] = property+"("+value+")";
+		element.style["-o-transform"] = property+"("+value+")";
+		element.style["transform"] = property+"("+value+")";
+	}
+
+	//based on http://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
+	function parseDate(events) {
+		var dateArrays = [];
+		events.each(function(){
+			var singleDate = $(this),
+				dateComp = singleDate.data('date').split('T');
+			if( dateComp.length > 1 ) { //both DD/MM/YEAR and time are provided
+				var dayComp = dateComp[0].split('/'),
+					timeComp = dateComp[1].split(':');
+			} else if( dateComp[0].indexOf(':') >=0 ) { //only time is provide
+				var dayComp = ["2000", "0", "0"],
+					timeComp = dateComp[0].split(':');
+			} else { //only DD/MM/YEAR
+				var dayComp = dateComp[0].split('/'),
+					timeComp = ["0", "0"];
+			}
+			var	newDate = new Date(dayComp[2], dayComp[1]-1, dayComp[0], timeComp[0], timeComp[1]);
+			dateArrays.push(newDate);
+		});
+	    return dateArrays;
+	}
+
+	function daydiff(first, second) {
+	    return Math.round((second-first));
+	}
+
+	function minLapse(dates) {
+		//determine the minimum distance among events
+		var dateDistances = [];
+		for (i = 1; i < dates.length; i++) { 
+		    var distance = daydiff(dates[i-1], dates[i]);
+		    dateDistances.push(distance);
+		}
+		return Math.min.apply(null, dateDistances);
+	}
+
+	/*
+		How to tell if a DOM element is visible in the current viewport?
+		http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+	*/
+	function elementInViewport(el) {
+		var top = el.offsetTop;
+		var left = el.offsetLeft;
+		var width = el.offsetWidth;
+		var height = el.offsetHeight;
+
+		while(el.offsetParent) {
+		    el = el.offsetParent;
+		    top += el.offsetTop;
+		    left += el.offsetLeft;
+		}
+
+		return (
+		    top < (window.pageYOffset + window.innerHeight) &&
+		    left < (window.pageXOffset + window.innerWidth) &&
+		    (top + height) > window.pageYOffset &&
+		    (left + width) > window.pageXOffset
+		);
+	}
+
+	function checkMQ() {
+		//check if mobile or desktop device
+		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
+	}
+});
+
+
+   var faces = [
+  "┏(-_-)┛",
+  "┗(-_- )┓",
+  "┗(-_-)┛",
+  "┏(-_-)┓",
+  "┏(-_-)┛",
+  "┗( -_-)┓",
+  "┗(-_-)┛",
+  "┏(-_-)┓"
+];
+
+var i = 0;
+
+animate();
+function animate() {
+  document.getElementById("anim").innerHTML = faces[i];
+  i += 1;
+  if (i==faces.length) {
+    i=0;
+  }
+  setTimeout(animate, 300);
+}
+  </script>

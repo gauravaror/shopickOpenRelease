@@ -1,0 +1,288 @@
+<resources>
+    <string name="app_name">Shopick</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_browse">Browse</string>
+    <string name="title_activity_eula">EULA</string>
+
+    <string name="pump_explore">Click Pump Button to Explore Reebok Pump.</string>
+    <string name="navdrawer_item_home">Home</string>
+    <string name="navdrawer_item_explore">Explore</string>
+    <string name="navdrawer_item_settings">Settings</string>
+    <string name="day_title_today">Today</string>
+    <string name="day_title_tomorrow">Tomorrow</string>
+    <string name="day_title_yesterday">Yesterday</string>
+    <string name="filter_stores">Search Stores</string>
+    <!-- Shown as a link in the About screen of the app; user can click to see the EULA. -->
+    <string name="about_eula">End User License Agreement</string>
+    <string name="permission_write"> Permission to write Shopick Data</string>
+    <!-- Shown as a link in the About screen of the app; user can click it to see the licenses. -->
+    <string name="about_licenses">Open Source Licenses</string>
+
+    <!-- Label on a button that the user clicks to accept a license agreement. -->
+    <string name="accept">Accept</string>
+    <!-- Label on a button that the user clicks to decline something (for example, a license
+    agreement). -->
+    <string name="decline">Decline</string>
+
+    <!-- Medium-length welcome text indicating the subsequent text is important legal information -->
+    <string name="welcome_text">Before we begin, here is some important legal information regarding your use of this app. This will only take a minute!</string>
+
+    <!-- A single button shown on informative popups, like EULA, open source licenses and About -->
+    <string name="ok">OK</string>
+
+    <!-- Header for a group of sessions in Session Explorer that don't fit into other tag-based groups -->
+    <string name="others">Others</string>
+
+    <!-- Header for a dialog listing event partners -->
+    <string name="partners">Partners</string>
+
+    <string name="font_fontFamily_medium">Ariel</string>
+    <string name="welcome_to_google_i_o_app">Welcome to Shopick</string>
+    <string name="eula_legal_text">Eula</string>
+    <string name="placeholder_lorem_ipsum">" Wow, Store wide blazers at 50% off in Zara #Zara #offers #loveit . It can't get any better -> Just go and grab it."</string>
+    <string name="check_tab">Check Tab </string>
+
+    <string name="shopick">Shopick</string>
+    <string name="all_one">Women</string>
+    <string name="all_two">Men</string>
+    <string name="all_three">Kids</string>
+    <string name="all_four">LifeStyle</string>
+
+    <!-- Message shown in a toast (popup) when the user clicks to change the active account but
+there is no network connection -->
+    <string name="no_connection_cant_login">Can\'t sign in. Check your network connection.</string>
+
+    <!-- Title for an error message that appears when the user tries to use the app without
+a Google account configured on their device. -->
+    <string name="google_account_required_title">Google Account Required</string>
+
+    <!-- Error message that shows when the user tries to use the app without a Google account
+    configured on their device. -->
+    <string name="google_account_required_message">To use this application, you must have at least one Google account on your device.</string>
+
+    <!-- Label on a button that, when clicked, allows user to add an account to the device. -->
+    <string name="add_account">Add Account</string>
+    <!-- Button of a popup that shows up when the user has no Google account registered in the
+    device. The popup says that the user needs to have at least one Google account registered in the
+    device to be able to use the app. [CHAR_LIMIT=20] -->
+    <string name="not_now">Not now</string>
+    <string name="navdrawer_item_sign_in">Sign In</string>
+
+
+    <!-- Shown in a drop-down list on the main screen, indicating that all conference sessions
+are being displayed. -->
+    <string name="all_sessions">All Sessions</string>
+
+    <!-- Shown in a drop-down list on the main screen, indicating that all conference themes
+    are being displayed. Themes are major categories for sessions (the themes are Design,
+    Develop and Distribute). -->
+    <string name="all_themes">All Themes</string>
+
+    <!-- Shown in a drop-down list on the main screen, indicating that all conference topics
+    are being displayed. Topics are major categories for sessions (example topics are: Android,
+    Chrome, Google APIs, Wearables, etc). -->
+    <string name="all_topics">All Topics</string>
+
+    <!-- Shown in a drop-down list on the main screen, indicating that all session types
+    are being displayed. Some examples of session types are: session, office hours, code lab. -->
+    <string name="all_types">All Types</string>
+
+    <!-- Shown in a drop-down list on the Video Library screen, indicating that videos from all
+    I/O years are being displayed. -->
+    <string name="all_years">All Years</string>
+
+    <!-- Short text label indicating a grouping of themes -->
+    <string name="themes">Themes</string>
+
+
+    <!-- Label for exploration category which groups session topics -->
+    <string name="topics">Topics</string>
+
+    <!-- Label for exploration category which groups session types -->
+    <string name="types">Types</string>
+    <string name="no_matching_content">No Matching Content</string>
+    <string name="presentation_head">Presentation</string>
+    <string name="placeholder_feed_post_title">Gaurav liked a offer at Zara.</string>
+    <string name="like_presentation">Like</string>
+    <string name="dislike_presentation">Dislike</string>
+    <string name="placeholder_feed_post_subtitle">posted at 10 PM</string>
+    <string name="placeholder_update_snippet" />
+    <string name="placeholder_update_subtitle" />
+    <string name="placeholder_update_title" > </string>
+    <string name="placeholder_update_latest_launch" > FRESH ARRIVALS AT ONLY</string>
+    <string name="title_activity_post">Post to Shopick</string>
+    <string name="description_post">Post</string>
+    <string name="search_title">Search Category</string>
+    <string name="search_hint">Search for Posts, Collections, Brands</string>
+    <string name="title_activity_location_picker">Pick Store</string>
+    <string name="title_activity_category_picker">What are you Buying</string>
+    <string name="similar_products">Similar Products:</string>
+    <string name="brand_stores">Nearest Stores:</string>
+    <string name="location_placeholder">1 Km</string>
+    <string name="title_activity_product_collection">Collection</string>
+    <string name="title_activity_product">Shopick</string>
+    <string name="product_title">Title</string>
+    <string name="product_snippet">Snippet - product details</string>
+    <string name="signup_text_title">SIGN UP. YOU KNOW YOU WANT TO.</string>
+    <string name="signup_text_snippet">It will take less than 5 seconds.</string>
+    <string name="signup_text_no_post">We will never post anything without your permission.</string>
+    <string name="intro_screen_desc">Your shopping companion.</string>
+    <string name="skip_login">skip login</string>
+    <string name="title_activity_login">Login</string>
+    <string name="intro_screen_name">Shopick</string>
+    <string name="liked">Collection</string>
+    <string name="brought">brought</string>
+    <string name="offer">Offer</string>
+    <string name="category">category</string>
+    <string name="brand">brand</string>
+    <string name="title_activity_brand_picker">Pick Brand</string>
+    <string name="feed">Feed</string>
+    <string name="bought">bought</string>
+    <string name="similar_posts">Similar Posts</string>
+    <string name="switch_mode">Orignal Image</string>
+    <string name="share_app">Refer &amp; Win</string>
+    <string name="filter_title_viewpost">Shopick</string>
+    <string name="whatsapp_share">Whatsapp</string>
+    <string name="facebook_share">Facebook</string>
+    <string name="twitter_share">Twitter</string>
+    <string name="message_share">Hangout</string>
+    <string name="gplus_share">Google</string>
+    <string name="otherapps_share">Other Apps</string>
+    <string name="instagram_share">Instagram</string>
+    <string name="pinterest_share">Pinterest</string>
+    <string name="share_presentation">Share</string>
+    <string name="share_post">Share</string>
+    <string name="seen_presentation">Saw Now!</string>
+    <string name="like_post">Like</string>
+    <string name="facebook_app_id">924859280931985</string>
+    <string name="findanything">#FindAnything</string>
+    <string name="ask_to_locate">Ask us to locate any product that you are looking, We will find it around your area...</string>
+    <string name="chat">Whatsapp Shopick</string>
+    <string name="update_number">Please provide us with your phone number, We will inform you about availability of product on this number:</string>
+    <string name="phone_no">Phone Number</string>
+    <string name="find_post">Locate</string>
+    <string name="find_this">Locate</string>
+    <string name="search_hint_shopick">Search Shopick</string>
+    <string name="action_search">Search</string>
+    <string name="action_search_results">Search Results</string>
+    <string name="action_custom_results">Quick Links</string>
+    <string name="latest_launch">Latest Launch</string>
+    <string name="navdrawer_item_feed">Feed</string>
+    <string name="navdrawer_item_tips">Tips</string>
+    <string name="navdrawer_item_contact_us">Contact Us</string>
+    <string name="title_activity_liked_brands">Select your favourite brands</string>
+    <string name="invitation_cta">Invite</string>
+    <string name="invitation_message">Hi Checkout this app to get all the offers from brands we love</string>
+    <string name="invitation_title">Checkout Shopick</string>
+    <string name="invitation_deep_link">www.shopick.co.in/post/010c55eb-ac80-439e-bf21-5e5ee7478782</string>
+    <string name="redeem_text">Enter Your referral Code:</string>
+    <string name="redeem">Redeem</string>
+    <string name="title_activity_redeem">Welcome to Shopick</string>
+    <string name="your_code">Fetching your referral code ...</string>
+    <string name="share_code">Share Referral Code</string>
+    <string name="title_activity_refer_and_win"><![CDATA[Refer & Win]]></string>
+    <string name="got_referral">Got Referral Code ?</string>
+    <string name="title_activity_picks">Picks</string>
+    <string name="earn_picks">Earn Picks</string>
+    <string name="picks">10 Picks</string>
+    <string name="monthly_picks">Monthly Picks</string>
+    <string name="leaderboard">Leader Board</string>
+    <string name="monthly_picks_leader_desc">Monthly 3 Leading Users on Leaderboard win vouchers worth 1000Rs.</string>
+    <string name="name">Gaurav</string>
+    <string name="title_activity_earnPicks">Earn Picks</string>
+    <string name="title_activity_redeemPicks">Redeem Picks</string>
+    <string name="title_activity_post_collection">Posts</string>
+    <string name="label_picks">Picks</string>
+    <string name="fb_login_protocol_scheme">fb924859280931985</string>
+    <string name="google_app_id">322099374098-tmht73i7uohfso4jc1bsr2qfhtm5h5sn.apps.googleusercontent.com</string>
+    <string name="server_client_id">322099374098-tmht73i7uohfso4jc1bsr2qfhtm5h5sn.apps.googleusercontent.com</string>
+    <string name="server_client_debug_id">1064151753729-79lcifb3nc73lvp1lu524c36v1q90j92.apps.googleusercontent.com</string>
+    <string name="label_alloffer">All Offers</string>
+    <string name="post">Post</string>
+    <string name="upload_camera">Camera</string>
+    <string name="upload_gallery">Gallery</string>
+    <string name="liked_product_post">Upload a a clear image of product you liked or bought at a store!! A selfie while trying out the product would be great!</string>
+    <string name="offer_spotted_post">Upload a clear image of offer you spotted at a store.</string>
+    <string name="add_description_post">Write a line about your post</string>
+    <string name="add_category_post">What product is it ?</string>
+    <string name="add_location_post">Where did you buy/find it ?</string>
+    <string name="add_price_range_post">Tell us about the price range or discount on this product?</string>
+    <string name="select_image">Choose an image</string>
+    <string name="discount_feed_post_hint">Zara Mid Season Sale 50 % off or Rs 1000</string>
+    <string name="location_feed_post_hint">Zara Select City Walk</string>
+    <string name="category_feed_post_hint">Tops Women</string>
+    <string name="text_feed_post_hint">Loved this retro jeans, Awesome discount made it all the worth buying</string>
+    <string name="add_offer_or_not_post">Is this an Offer ?</string>
+    <string name="yes">Yes</string>
+    <string name="openDrawer">Open Side Menu</string>
+    <string name="closeDrawer">Close Side Menu</string>
+    <string name="discover_launch">Sneak peak in to your favourite brands latest collection.</string>
+    <string name="discover_collection">Check out what other are buying/liking at stores.</string>
+    <string name="discover_offer">Discover offers that are currently available at stores.</string>
+    <string name="collection">Collection</string>
+    <string name="sample_marquee">Upto 50 off at BIBA Factory Outlet, Gurgaon.  Only Mid Season Sale 30 off. UCB Buy 2 Get 1 Free or Buy 1 and Get 50 off.</string>
+    <string name="sample_marquee_launch">Summer Collection launched by Biba. Checkout UCB 50% off collection. Fathers day special collection Launched by Marks and Spencer.</string>
+    <string name="sample_marquee_collection"><![CDATA[Pooja Jain bought at Top from Mango. Ruchika Abbs bought tee from M&S Pacific Mall.]]></string>
+    <string name="see_all">See All</string>
+    <string name="list_all_brands">     List All Brands</string>
+    <string name="like_your_brands">Liked Brands</string>
+    <string name="select_favourite_brands">Favourite Brands: We will notify about discount\'s posted by our community.</string>
+    <string name="show_offer_updates_for">Show Offer, Collection and Brand Updates for:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="image_photo">post_image</string>
+    <string name="filter_brands">Search Brands</string>
+    <string name="feedback">Feedback</string>
+    <string name="rateus">Rate Us</string>
+    <string name="action_picks">Picks</string>
+    <string name="couldnt_find_anything">Seems like we dont have any offers for this brand. Ask us to locate current Offers running on this brand</string>
+    <string name="offfer_desc">OFFER: Check out the Current Offers available at different stores and plan your Shopping.</string>
+    <string name="latest_launch_desc">LATEST LAUNCH: Have a first hand look at the latest collection launched by your favourite brands.</string>
+    <string name="collection_desc">COLLECTION: Ever wondered what others are buying? Look no further! Check out what others are buying/liking and update your style quotient.</string>
+    <string name="title_find_this">Find this product</string>
+    <string name="desc_find_this">Go Ahead and ask us to locate the Product(s); the  availability of particular size or color and/or anything related to your favourite brands!</string>
+    <string name="title_post">Post on Shopick</string>
+    <string name="desc_post">Upload/Post an image of your recent purchase or an offer you spotted at any store and earn PICKS which are redeemable for real Cash!</string>
+    <string name="title_redeem">Reedem your Picks</string>
+    <string name="desc_redeem">You can either redeeem PICKS for Cash or for amazing Shopping Vouchers redeemable at your Favourite Brands.</string>
+    <string name="only_brand">Only</string>
+
+    <string-array name="price_range_discount">
+            <item>100 Rs - 1000 Rs</item>
+            <item>1000 Rs - 2000 Rs</item>
+            <item>2000 Rs - 5000 Rs</item>
+            <item>5000 Rs - 7000 Rs</item>
+            <item>7000 Rs - 10000 Rs</item>
+            <item>10000 Rs - 15000 Rs</item>
+            <item>150000 Rs - 20000 Rs</item>
+            <item>20000 Rs +</item>
+            <item>Buy 1 and get 1 free</item>
+            <item>Buy 2 and get 1 free</item>
+            <item>Buy 2 and get 2 free</item>
+            <item>Buy 1 and get 50% off on second product</item>
+            <item>Buy 2, Get the 3rd one Free</item>
+            <item>Get a Leather Duffle Bag Free!</item>
+            <item>upto 10% off</item>
+            <item>upto 20% off</item>
+            <item>upto 25% off</item>
+            <item>upto 30% off</item>
+            <item>upto 40% off</item>
+            <item>upto 50% off</item>
+            <item>upto 60% off</item>
+            <item>upto 70% off</item>
+            <item>Flat 10% off</item>
+            <item>Flat 20% off</item>
+            <item>Flat 25% off</item>
+            <item>Flat 30% off</item>
+            <item>Flat 40% off</item>
+            <item>Flat 50% off</item>
+            <item>Flat 60% off</item>
+            <item>Flat 70% off</item>
+            <item>Other</item>
+
+        </string-array>
+
+
+</resources>

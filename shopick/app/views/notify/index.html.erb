@@ -1,0 +1,294 @@
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag "style", media: "all" %>
+  <%= stylesheet_link_tag "slick", media: "all" %>
+<%= javascript_include_tag "jquery-1.10.2.min" %>
+<%= javascript_include_tag "move-top" %>
+<%= javascript_include_tag "easing" %>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+
+<%= javascript_include_tag "slick" %>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+		    $('.single-item').slick({
+		        dots: true,
+		        infinite: true,
+		        speed: 300,
+		        autoplay:true,
+		        arrows:false,
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		     });
+       });
+    </script>
+
+    <!-- Meta Tags for index -->
+<% content_for :head do %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  <!-- Index Page tags -->
+  <meta name="google-site-verification" content="Hl-RKwdKQZ_tITwexASPdWpntM5ggGnCQ3XpT61slD8" />
+<meta property="fb:app_id" content="924859280931985" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Right picks and bargains from stores around you!"/>
+<meta property="og:description" content="Discover offers and latest collection from your favourite brands like Levis, Forever 21, Puma..."/>
+<meta property="og:url" content="http://shopick.co.in" />
+<meta property="og:site_name" content="shopick.co.in" />
+<meta property="og:image" content="http://shopick.co.in/banner.jpg"/>
+<meta property="og:image:url" content="http://shopick.co.in/banner.jpg"/>
+
+<!--<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@shopickapp">
+<meta name="twitter:creator" content="@shopickapp">
+<meta name="twitter:title" content="Right picks and bargains from stores around you!">
+<meta name="twitter:description" content="Discover offers and latest collection from your favourite brands like Levis, Forever 21, Puma...">
+<meta name="twitter:image" content="http://shopick.co.in/banner.jpg" >
+<% end %>
+
+    <!-- Meta Tags for index ends -->
+
+
+   <div class="header">	
+    <div class="header-top">
+       <div class="wrap"> 
+	         <div class="logo">
+				<a href="/"><%= image_tag "logo.png" %></a>
+			 </div>
+			 <div class="cssmenu">
+				<ul id="nav">
+					 <li class="current"><a href="#section-1" class="scroll" >Home</a></li>
+					 <li><a href="#section-2" class="scroll">Features</a></li>
+					  <li><a href="#section-3" class="scroll">Download</a></li>
+					  <li><a href="/findanything" >#FindAnything</a></li>
+					 <li><a href="http://blog.shopick.co.in">Blog</a></li>
+				     <li><a href="#section-5" class="scroll">Contact</a></li>
+				</ul>
+		    </div>
+		    <div class="clear"></div>
+	   </div>
+	 </div>
+	        <div class="header-bottom" id="section-1">
+				<div class="wrap">
+					<div class="img-banner">
+						<div class="img-banner-info">
+							<h1><span>The Simplest Way for Local Store Shopping</span></h1>
+							<h3>Get Shopick. Browse Latest Collection & Discover Great Offers.</h3>
+							<div class="app-btn"><a href="https://goo.gl/hLK38o">Download on GooglePlay</a></div>
+					    </div>
+						<div class="img-banner-pic">
+							<%= image_tag "mobile.png" %>
+						   </div>
+						<div class="clear"> </div>
+					</div>
+   				</div>
+  			</div>
+ 		</div>
+	 <div class="main">
+	 	<!-- Features -->
+	    <div class="features" id="section-2">
+	       <div class="wrap">
+		        <h2>App Features</h2>
+				<p>Shopick is your true personal shopping assistant.</p>
+				<div class="features-list">
+				  <div class="col_1_of_3 span_1_of_3">
+					<div class="dc-head">
+						<div class="dc-head-icon">
+							<%= image_tag "features-img1.png" %>
+						</div>
+						<div class="dc-head-info">
+							<h3>Discover all Offers at <span>Stores</span></h3>
+							<p>Every store including two stores of a same brand have different offers running at different time!</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				  </div>
+				 <div class="col_1_of_3 span_1_of_3">
+					<div class="dc-head">
+						<div class="dc-head-icon">
+							<%= image_tag "features-img2.png" %>
+						</div>
+						<div class="dc-head-info">
+							<h3>Browse the Latest <span>Collection</span></h3>
+							<p>We'd like to keep you updated with all the new arrivals available at every store!</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				  </div>
+				  <div class="col_1_of_3 span_1_of_3">
+					<div class="dc-head">
+						<div class="dc-head-icon">
+							<%= image_tag "features-img3.png" %>
+						</div>
+						<div class="dc-head-info">
+							<h3>Know the Tips for that <span>Perfect look & Trends</span> of the Season</h3>
+							<p>We'll bring the best & personalized tips for you & let you know the Trends of the Season before anyone does!</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				  </div>
+				<div class="clear"></div>
+			</div>			
+		   </div>
+		 </div>   
+
+		   <!-- Download Button  -->
+		     <div class="content-middle content-offer" id="section-3">
+			     <div class="wrap">
+			   </div>
+		    </div>
+
+		 
+		  <div class="offer testimonials " id="section-7">
+			     		<div class="wrap ">
+			     			  <div class="slider single-item">
+			     			  <% @post.each do |p| %>
+			     			  <div>
+			     			  	<h3><%= p.username %> posted</h3>
+								<p> <%= p.description %></p>
+								<p><img src=<%=p.image.url(:medium)%> alt="image" /></p>
+								</div>
+							  <% end %>					
+							</div>	 			
+					</div>			      	
+		  </div>
+
+		  <!-- Download Button  -->
+		     <div class="content-middle" id="section-3">
+			     <div class="wrap">
+			     	 <div class="download-desc">
+					  <h2>The Simplest Way for Local Store Shopping </h2> 
+					  <p>Get Shopick. Browse Latest Collection & Discover Great Offers.</p> 		
+					  <div class="download-button"><a href="https://goo.gl/hLK38o">Download</a></div>			
+				    </div>			
+			   </div>
+		    </div>
+
+		    <!-- Testimonials -->
+		           <div class="testimonials" id="section-4">
+			     		<div class="wrap">
+			     			  <div class="slider single-item">
+								<div>
+									<p>"Great place to find deals. "</p>
+									<h3>Saumya Sharma</h3>
+								</div>
+								<div>
+									<p>"Loved the concept of an online assistant to help shopping from offline stores! 5 Stars for bringing social experience to shopping. "</p>
+									<h3>Naisheel Verdhan</h3>
+							   </div>
+								<div>
+									<p>"Great Concept! This is an app for lazy people like me who love to shop but hate the effort of having to go shop to shop to find the perfect clothes!  Simple and legible interface. Very useful app!!. "</p>
+							        <h3>Saumya Saxena</h3>
+							    </div>
+							    <div>
+									<p>"Crowdsourced offers from retail store!! that's is very helpful to locate deals realtime. "</p>
+									<h3>Gaurav Arora</h3>
+								</div>
+								
+							</div>	 			
+					</div>			      	
+			   </div>
+	     </div>
+	   <!-- End Main -->
+	   
+	   <!-- Footer -->
+         <div class="footer" id="section-5">
+    	   <div class="wrap">
+              <div class="footer-top">
+              	<%= image_tag "logo.png" %>
+       	       <div class=" group">
+				<div class="col_1_of_3 span_1_of_3">					
+					<h3>Popular Post</h3>
+					<ul>
+						<li><a href="#">
+							<div class="tweeter">
+								<div class="tweeter-img post-img">
+								<%= image_tag "user-img.jpg" %>
+									
+								</div>
+								 <div class="tweeter-user post-desc">
+									<p>Mid Season Sale at Jack & Jones <br/> Posted by Himani </p>
+								</div>
+								<div class="clear"></div>
+							</div>	
+							</a>											
+						</li>
+						<li>
+							<div class="tweeter">
+								<div class="tweeter-img post-img">
+								<%= image_tag "user-img.jpg" %>
+									
+								</div>
+								 <div class="tweeter-user">
+									<p> ONLY For Your 30% Off <br/>Posted by Sunayana</p>
+								</div>
+								<div class="clear"></div>
+							</div>												
+						</li>
+						<li>
+							<div class="tweeter">
+								<div class="tweeter-img post-img">
+								<%= image_tag "user-img.jpg" %>
+									
+								</div>
+								 <div class="tweeter-user">
+									<p> Winter warming offer -  buy 1 get 1 half price <br/>Posted by Viddyuta</p>
+								</div>
+								<div class="clear"></div>
+							</div>												
+						</li>
+					</ul>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<h3>Social</h3>
+					<ul>
+						<li>
+							<div class="tweeter-desc">
+								<a href="https://www.facebook.com/shopick.co.in">Facebook</a>
+							</div>							
+						</li>
+						<li>
+							<div class="tweeter-desc">
+								<a href="https://www.linkedin.com/company/shopick-app">Linkedin</a>
+							</div>							
+						</li>
+						<li>
+							<div class="tweeter-desc">
+								<a href="https://twitter.com/shopickapp">Twitter</a>
+							</div>							
+						</li>
+
+					</ul>
+				</div>
+				 <div class="col_1_of_3 span_1_of_3">
+					<h3>About</h3>
+					<p><span>Shopick is your true personal shopping assistant.. </span></p>
+					<p><span>Phone: 9999895179 </span></p>
+					<p><span>Address: Acquire Technologies </span></p>
+					<p><span> G-5, Masjid Moth, Greater Kailash (GK) 2, New Delhi </span></p>
+				</div>
+			  </div>
+            </div> 
+         </div>    
+          <div class="footer-bottom">
+            <div class="copy">
+		      <p> © All Rights Reserved 2014 template by  <a href="http://w3layouts.com" target="_blank">w3layouts</a> </p>
+	       </div>	    
+	     </div>   
+     </div>
+       <script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+       <a href="#" id="toTop"> <span id="toTopHover"></span> </a>

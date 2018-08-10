@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <Spinner xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/Widget.Shopick.HeaderBar.Spinner"
+        android:id="@+id/secondary_filter_spinner_1"
+    android:background="?android:selectableItemBackground"
+    android:layout_width="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:textColor="@color/tab_text_color"
+    android:spinnerMode="dialog"
+    android:textSize="@dimen/text_size_small"
+    android:fontFamily="@string/font_fontFamily_medium"
+    android:textAllCaps="true" />

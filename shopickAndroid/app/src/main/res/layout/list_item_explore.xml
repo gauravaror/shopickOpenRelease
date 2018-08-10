@@ -1,0 +1,75 @@
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="250dp"
+    android:foreground="@drawable/abc_item_background_holo_dark"
+    android:id="@+id/session_target">
+
+    <!-- Session image -->
+    <ImageView android:id="@+id/session_photo_colored"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"/>
+
+    <!-- Session category/group if non-default (e.g. "Workshop") -->
+    <TextView android:id="@+id/session_category"
+        style="@style/ExploreItem.Category"
+        android:background="@color/accentPrimary"
+        android:padding="9dp"
+        android:textColor="@color/material_white"
+        android:textSize="@dimen/text_size_medium_plus"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <!-- Info box -->
+    <LinearLayout
+        android:id="@+id/info_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient_line"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <!-- Session title -->
+        <TextView android:id="@+id/session_title"
+            style="@style/CategoryItem.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_update_title"
+            android:paddingBottom="2dp"/>
+]
+        <!-- Abstract snippet -->
+        <TextView android:id="@+id/session_snippet"
+            style="@style/CategoryItem.Snippet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:text="@string/placeholder_update_snippet" />
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/like_explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_outline_white_24dp"
+        android:layout_gravity="bottom|right"
+        android:padding="5dp"
+        android:background="@drawable/circle"/>
+
+    <ImageButton
+        android:id="@+id/share_explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share_white_24dp"
+        android:layout_gravity="top|right"
+        android:padding="5dp"
+        android:background="@drawable/circle"/>
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/intro_screen_background">
+
+
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xsmall"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_gravity="end"
+        android:text="@string/skip_login"/>
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    >
+
+        <ImageView
+            android:id="@+id/image_banner_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            />
+        <LinearLayout
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="40dp"
+            android:background="@drawable/dark_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        style="@style/CategoryItem.Title"
+        android:id="@+id/intro_screen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:text="@string/intro_screen_name"/>
+    <TextView
+        android:id="@+id/intro_screen_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/body_text_1_inverse"
+        android:text="@string/intro_screen_desc"/>
+        </LinearLayout>
+
+</LinearLayout>
+</android.widget.FrameLayout>

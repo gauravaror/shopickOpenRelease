@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingLeft="@dimen/content_padding_normal"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:visibility="invisible"
+            android:layout_margin="@dimen/element_spacing_normal"
+            android:id="@+id/fab_main_offer"
+            android:layout_width="@dimen/fab_width_circle_three_smaller"
+            android:layout_height="@dimen/fab_width_circle_three_smaller"
+            android:src="@drawable/ic_add_white_24dp"
+            android:elevation="6dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/text_size_large"
+            android:layout_toRightOf="@+id/textView_offer"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/element_spacing_normal"
+            android:textColor="@color/material_white"
+            android:text="@string/offer"
+            android:background="@drawable/color_button_ripple_selector"
+            android:layout_gravity="center"
+            android:stateListAnimator="@animator/button_elevation"
+            />
+
+        <Button
+            android:layout_margin="@dimen/element_spacing_normal"
+            android:visibility="invisible"
+            android:id="@+id/fab_main_collection"
+            android:layout_width="@dimen/fab_width_circle_three_smaller"
+            android:layout_height="@dimen/fab_width_circle_three_smaller"
+            android:src="@drawable/ic_add_white_24dp"
+            android:elevation="6dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/material_white"
+            android:text="@string/collection"
+            android:background="@drawable/color_button_ripple_selector"
+            android:layout_gravity="center"
+            android:stateListAnimator="@animator/button_elevation"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:visibility="invisible"
+            android:layout_margin="@dimen/element_spacing_normal"
+            android:id="@+id/fab_main_latest_launch"
+            android:layout_width="@dimen/fab_width_circle_three_smaller"
+            android:layout_height="@dimen/fab_width_circle_three_smaller"
+            android:src="@drawable/ic_add_white_24dp"
+            android:elevation="6dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/text_size_large"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_centerInParent="true"
+            android:textColor="@color/material_white"
+            android:text="@string/latest_launch"
+            android:background="@drawable/color_button_ripple_selector"
+            android:stateListAnimator="@animator/button_elevation"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:padding="@dimen/element_spacing_normal"
+            android:id="@+id/text_view_intro"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/text_size_large"
+            android:text="@string/collection_desc"
+            android:textColor="@color/material_white"
+            android:paddingBottom="@dimen/element_spacing_normal"
+            android:background="@drawable/dark_background"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/example_offer"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:id="@+id/image_view_intro"
+                android:src="@drawable/offer_meta_posts"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/example_collection"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <include layout="@layout/sample_show_feed_item_layout"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/example_latest_launch"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <include layout="@layout/example_latest_launch"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

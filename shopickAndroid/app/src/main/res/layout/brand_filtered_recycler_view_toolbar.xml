@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_relative"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/list_feed_container"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/gray_background"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_brand_filtered"
+            android:background="@color/gray_background"
+            android:layout_width="match_parent"
+            android:layout_marginRight="1.0sp"
+            android:layout_marginLeft="1.0sp"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            ></android.support.v7.widget.RecyclerView>
+
+
+        <!--First button as menu button-->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+          <!--  <include layout="@layout/toolbar_generic"/>-->
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <com.acquire.shopick.ui.widget.ProgressView
+        android:id="@+id/progress_feed"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rotate"
+        app:frameCount="8"
+        app:duration="1000"/>
+</RelativeLayout>

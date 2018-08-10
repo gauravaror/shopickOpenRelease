@@ -1,0 +1,59 @@
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_phonenumber"
+    android:layout_height="250dp"
+    android:layout_marginLeft="@dimen/feed_normal_spacing_around"
+    android:layout_marginRight="@dimen/feed_normal_spacing_around"
+    android:id="@+id/session_target">
+    <!-- Info box -->
+    <LinearLayout
+        android:id="@+id/info_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient_line"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <!-- Session title -->
+        <TextView android:id="@+id/session_title"
+            style="@style/CategoryItem.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_update_title"
+            android:paddingBottom="2dp"/>
+
+        <!-- Abstract snippet -->
+        <TextView android:id="@+id/session_snippet"
+            style="@style/CategoryItem.Snippet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:text="@string/placeholder_update_snippet" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="@dimen/abc_action_bar_default_padding_material"
+        android:id="@+id/offer_brand_category"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_search"/>
+
+    <Button
+        android:layout_margin="@dimen/abc_action_bar_default_padding_material"
+        android:id="@+id/collection_brand_category"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_search"/>
+    <!-- Session image -->
+
+
+
+</LinearLayout>

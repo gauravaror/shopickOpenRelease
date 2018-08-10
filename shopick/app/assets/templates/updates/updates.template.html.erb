@@ -1,0 +1,29 @@
+<div md-whiteframe="1" ng-controller="UpdatesCtrl" >
+  <md-progress-linear  md-mode="indeterminate" ng-hide="!activated"></md-progress-linear>
+  <md-subheader class="md-primary md-accent">Latest Launched products</md-subheader>
+  <md-content  layout="column">
+    <md-grid-list
+        md-cols="1" md-cols-sm="2" md-cols-md="2" md-cols-gt-md="2"
+        md-row-height="400px"
+        md-gutter="10px" md-gutter-gt-sm="10px" >
+        <md-grid-tile ng-repeat="product in products"
+                  md-rowspan="1"
+                  md-colspan="1"
+                  md-colspan-sm="1"
+                  md-colspan-xs="1">
+          <md-card ng-click=openProduct(product.globalID)>
+              <div class="wraptocenter">
+                <span></span>
+                <img class="product_image" src={{product.productImageUrl}} border="1"/>
+              </div>
+              <md-card-title >
+                <md-card-title-text layout-align="center center">
+                  <span class="md-headline"> &nbsp;&nbsp; {{product.brand_name}}</span>
+                  <span class=""> &nbsp;&nbsp; {{product.name}}</span>
+                </md-card-title-text>
+              </md-card-title>
+            </md-card>
+      </md-grid-tile>
+    </md-grid-list>
+  </md-content>
+</div>

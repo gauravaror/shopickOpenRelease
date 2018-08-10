@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Shopick">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+    android:icon="@drawable/ic_settings_grey_400_18dp"
+    android:orderInCategory="100"/>
+
+    <item android:id="@+id/action_picks" android:title="@string/action_picks"
+        android:icon="@drawable/ic_account_balance_wallet_grey_400_18dp"
+        android:orderInCategory="100"/>
+
+    <item android:id="@+id/action_search" android:title="@string/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="102"/>
+    <item
+        android:title="Picks"
+        android:id="@+id/badge"
+        android:actionLayout="@layout/picks_icon_layout"
+        android:icon="@drawable/shape_notification"
+        app:showAsAction="always">
+    </item>
+</menu>

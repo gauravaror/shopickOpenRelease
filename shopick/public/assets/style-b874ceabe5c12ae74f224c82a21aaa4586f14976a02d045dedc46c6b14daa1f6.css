@@ -1,0 +1,1274 @@
+/* A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+ */
+/* reset */
+/* line 10, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 11, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 12, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 14, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 15, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* start editing from here */
+/* line 17, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 18, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.txt-rt {
+  text-align: right;
+}
+
+/* text align right */
+/* line 19, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.txt-lt {
+  text-align: left;
+}
+
+/* text align left */
+/* line 20, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.txt-center {
+  text-align: center;
+}
+
+/* text align center */
+/* line 21, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.float-rt {
+  float: right;
+}
+
+/* float right */
+/* line 22, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.float-lt {
+  float: left;
+}
+
+/* float left */
+/* line 23, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.clear {
+  clear: both;
+}
+
+/* clear float */
+/* line 24, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.pos-relative {
+  position: relative;
+}
+
+/* Position Relative */
+/* line 25, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.pos-absolute {
+  position: absolute;
+}
+
+/* Position Absolute */
+/* line 26, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.vertical-base {
+  vertical-align: baseline;
+}
+
+/* vertical align baseline */
+/* line 27, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.vertical-top {
+  vertical-align: top;
+}
+
+/* vertical align top */
+/* line 28, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.underline {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  margin: 0 0 20px 0;
+}
+
+/* Add 5px bottom padding and a underline */
+/* line 29, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+nav.vertical ul li {
+  display: block;
+}
+
+/* vertical menu */
+/* line 30, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+nav.horizontal ul li {
+  display: inline-block;
+}
+
+/* horizontal menu */
+/* line 31, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+img {
+  max-width: 100%;
+}
+
+/*end reset*/
+/* line 33, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+}
+
+/* line 37, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+}
+
+/* line 46, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+#main_container {
+  text-align: center;
+}
+
+/* line 50, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.main_div {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* line 55, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.clear {
+  clear: both;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 63, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.float_right {
+  float: right;
+}
+
+/* line 67, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.banner {
+  background: url(/assets/banner-bg.jpg) no-repeat;
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  min-height: 600px;
+}
+
+/* line 75, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.logo {
+  margin-top: 3px;
+}
+
+/* line 79, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.mobile_points {
+  display: none;
+}
+
+/* line 86, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.bg {
+  position: absolute;
+}
+
+/* line 90, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.background_checked_content {
+  position: relative;
+  padding-top: 40px;
+  padding-left: 8px;
+}
+
+/* line 96, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.background_checked_content p {
+  line-height: 18px;
+  color: #fff;
+  padding: 10px 0 0 0;
+}
+
+/* line 102, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.height_cleaner {
+  height: 460px;
+}
+
+/* line 106, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.points {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 111, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.title {
+  margin: 10px 0;
+}
+
+/* line 115, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.title h1 {
+  font-size: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* line 121, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.headerfindanything {
+  background-size: 100% 100%;
+  color: #2b3e51;
+  height: 50px;
+  background-color: #ffffff;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/* line 134, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.headerfindanything .logo img {
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 140, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.header {
+  background: url(/assets/selectwalk.jpg) no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 150, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.header-top {
+  width: 100%;
+  clear: both;
+  padding: 20px 0;
+}
+
+/* line 155, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.headerfindanything .header-top {
+  width: 100%;
+  clear: both;
+  padding: 0px 0;
+}
+
+/* line 160, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.logo {
+  float: left;
+}
+
+/* line 163, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.logo h1 a {
+  color: #FFF;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 169, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.logo h1 a span {
+  font-weight: 100;
+}
+
+/*--menu--*/
+/* line 173, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.cssmenu {
+  float: right;
+}
+
+/* line 176, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.cssmenu > h2 {
+  margin-top: 40px;
+  float: right;
+  color: #FFF;
+  display: block;
+  padding: 12px 15px 12px 15px;
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  font-size: 40px;
+}
+
+/* line 186, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.findanything > h2 {
+  color: #f0484a;
+  padding: 0px 15px 0px 15px;
+  margin-top: 0px;
+}
+
+/* line 192, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.cssmenu > ul > li {
+  display: inline-block;
+}
+
+/* line 195, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+#nav .current a, .cssmenu > ul > li a:hover {
+  border-color: #FFF;
+}
+
+/* line 198, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.cssmenu > ul > li > a {
+  color: #FFF;
+  display: block;
+  padding: 12px 15px 12px 15px;
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 211, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.img-banner {
+  padding: 4em 0 0em 0;
+  position: relative;
+}
+
+/* line 215, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.img-banner-info {
+  float: left;
+  width: 45%;
+  margin-top: 25px;
+}
+
+/* line 220, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.img-banner-info h1 {
+  font-size: 3.3em;
+  font-weight: 100;
+  color: #FFF;
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+
+/* line 227, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.img-banner-info h1 span {
+  font-weight: bold;
+  -webkit-text-stroke: 1px;
+}
+
+/* line 231, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.img-banner-info h3 {
+  font-size: 36px;
+  font-weight: 100;
+  color: #FFF;
+  line-height: 1.3em;
+  margin: 35px 0;
+}
+
+/* line 238, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.img-banner-pic {
+  float: right;
+}
+
+/* line 241, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.img-banner-pic img {
+  margin-bottom: -5px;
+}
+
+/** App Download Button **/
+/* line 245, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.app-btn a {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  color: #FFF;
+  background: #282828 url(/assets/phone-icon.png) no-repeat 30px 6px;
+  padding: 22px 35px 22px 75px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -o-border-radius: 2em;
+}
+
+/* line 263, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.app-btn a:hover {
+  color: #da332d;
+  background: #FFF url(/assets/phone-icon-hover.png) no-repeat 30px 6px;
+}
+
+/*--content--*/
+/* line 268, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.features {
+  background: #FFF;
+  padding: 5% 0;
+}
+
+/* line 272, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.features h2 {
+  color: #8a8a8a;
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  text-align: center;
+}
+
+/* line 280, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.text_how h2 {
+  color: #8a8a8a;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  text-align: center;
+}
+
+/* line 290, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.features p {
+  color: #3a3a3a;
+  font-size: 22px;
+  line-height: 1.5em;
+  text-align: center;
+  width: 74%;
+  margin: 0 auto;
+}
+
+/*  GRID OF THREE   ============================================================================= */
+/* line 299, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.section {
+  clear: both;
+  margin: 0px;
+}
+
+/* line 303, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+/* line 308, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.group:after {
+  clear: both;
+}
+
+/* line 311, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.group {
+  zoom: 1;
+}
+
+/* line 314, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.col_1_of_3 {
+  display: block;
+  float: left;
+  margin: 0% 0 0% 1.6%;
+}
+
+/* line 319, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.col_1_of_3:first-child {
+  margin-left: 0;
+}
+
+/* line 320, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.span_1_of_3 {
+  width: 29.2%;
+  padding: 1.5%;
+}
+
+/* line 324, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.span_1_of_3 h3 {
+  color: #1a1a1a;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* line 330, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.span_1_of_3 p {
+  font-size: 18px;
+  padding: 0.5em 0;
+  color: #646464;
+  width: 100%;
+  line-height: 1.6em;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
+@media only screen and (max-width: 800px) {
+  /* line 339, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .wrap {
+    width: 95%;
+  }
+
+  /* line 342, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .col_1_of_3 {
+    margin: 1% 0 1% 0%;
+  }
+
+  /* line 345, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .span_1_of_3 {
+    width: 94%;
+    padding: 3%;
+  }
+}
+/* line 350, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.dc-head-icon {
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* line 355, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.features-icon {
+  font-size: 75px;
+}
+
+/* line 358, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.color {
+  color: #44b76f;
+}
+
+/* line 361, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.dc-head-info {
+  text-align: center;
+}
+
+/* line 364, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.features-list {
+  margin-top: 2em;
+}
+
+/* line 367, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.content-middle {
+  padding: 12% 0;
+  background: #d7dedc url(/assets/banner-pic.png) no-repeat center right;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 377, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.content-offer {
+  padding: 18% 0;
+  background: #d7dedc url(/assets/discoveroffer.jpg) no-repeat center right;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 387, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.download-desc {
+  width: 52%;
+}
+
+/* line 390, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.content-middle h2 {
+  color: #FFF;
+  font-size: 3.2em;
+  margin-bottom: 1%;
+  font-weight: bold;
+  -webkit-text-stroke: 1px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+}
+
+/* line 399, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.content-middle h2 span {
+  color: #f55150;
+}
+
+/* line 402, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.content-middle p {
+  color: #585858;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.6em;
+  padding: 10px 0;
+  width: 60%;
+}
+
+/* line 410, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.download-button {
+  margin-top: 3em;
+}
+
+/* line 413, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.download-button a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #d9332d;
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -o-border-radius: 2em;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 431, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.download-button a:hover {
+  color: #d9332d;
+  background: #FFF;
+}
+
+/* line 435, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.testimonials img {
+  max-height: 500px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 441, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.testimonials {
+  padding: 5% 0;
+}
+
+/* line 444, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.testimonials p {
+  color: #787878;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1.6em;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 453, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.offer h3 {
+  font-size: 20px;
+  color: #E95E5A;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin: 2.5em 0;
+  text-align: center;
+}
+
+/* line 461, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.testimonials h3 {
+  font-size: 20px;
+  color: #E95E5A;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 2.5em 0;
+  text-align: center;
+}
+
+/*--footer--*/
+/* line 471, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.footer {
+  background: #2e2e38;
+  padding: 5% 0 0% 0;
+}
+
+/* line 475, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.footer-top h3 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+/* line 482, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.footer-top p {
+  font-size: 14px;
+  color: #DCDCDC;
+  line-height: 1.6em;
+}
+
+/* line 487, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.footer-top p span {
+  font-style: italic;
+}
+
+/* line 490, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.tweeter-img {
+  float: left;
+}
+
+/* line 493, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.tweeter-img img {
+  display: block;
+  border: 1px solid #FFF;
+}
+
+/* line 497, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.tweeter-user {
+  float: left;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+/* line 502, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.tweeter-user p {
+  padding: 0;
+  font-weight: 600;
+}
+
+/* line 506, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.tweeter-user p span {
+  font-size: 12px;
+  font-style: inherit;
+  font-weight: normal;
+}
+
+/* line 511, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.tweeter-desc {
+  margin-top: 15px;
+}
+
+/* line 514, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.tweeter-desc a {
+  font-weight: 600;
+  color: #DDD;
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/* line 521, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.tweeter-desc a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+
+/* line 525, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.post-desc {
+  margin-top: 0;
+}
+
+/* line 528, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.post-img img {
+  border: none;
+}
+
+/* line 531, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.footer-top li:first-child {
+  margin-top: 0;
+}
+
+/* line 534, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.footer-top li {
+  margin-top: 15px;
+}
+
+/* line 537, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.footer-bottom {
+  padding: 10px 0;
+  background: #F9FAFD;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* line 543, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.copy p {
+  color: #2e2e38;
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+
+/* line 548, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.copy p a {
+  color: #E3530A;
+  font-weight: 600;
+}
+
+/* line 552, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.copy p a:hover {
+  color: #1E2024;
+  text-decoration: underline;
+}
+
+/*** move top **/
+/* line 557, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border: none;
+  text-indent: 100%;
+  background: url(/assets/arrow_up.png) no-repeat center;
+}
+
+/* line 570, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+#toTop:active, #toTop:focus {
+  outline: none;
+}
+
+/*--responsive design--*/
+@media (max-width: 1366px) {
+  /* line 575, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .wrap {
+    width: 90%;
+  }
+}
+@media (max-width: 1280px) {
+  /* line 581, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .wrap {
+    width: 90%;
+  }
+
+  /* line 584, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle {
+    background-size: 101%;
+    padding: 4% 0;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 590, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .wrap {
+    width: 90%;
+  }
+
+  /* line 593, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner {
+    padding: 2em 0 0 0;
+  }
+
+  /* line 596, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-pic {
+    width: 35%;
+  }
+
+  /* line 599, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info {
+    width: 60%;
+  }
+
+  /* line 602, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info h3 {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  /* line 606, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle h2 {
+    font-size: 2.5em;
+  }
+
+  /* line 609, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle p {
+    width: 100%;
+  }
+
+  /* line 612, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .download-button {
+    margin-top: 1em;
+  }
+
+  /* line 615, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .testimonials p {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  /* line 620, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .wrap {
+    width: 90%;
+  }
+
+  /* line 623, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .cssmenu > ul > li > a {
+    padding: 12px 8px 12px 8px;
+    font-size: 13px;
+  }
+
+  /* line 627, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .logo {
+    width: 25%;
+  }
+
+  /* line 630, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info h1 {
+    font-size: 2.2em;
+  }
+
+  /* line 633, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info h3 {
+    font-size: 22px;
+  }
+
+  /* line 636, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .features p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  /* line 640, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .app-btn a {
+    font-size: 15px;
+    padding: 20px 25px 20px 70px;
+    background: #282828 url(/assets/phone-icon.png) no-repeat 25px 4px;
+  }
+
+  /* line 645, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .app-btn a:hover {
+    background: #FFF url(/assets/phone-icon-hover.png) no-repeat 25px 4px;
+  }
+
+  /* line 648, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle h2 {
+    font-size: 2em;
+  }
+
+  /* line 651, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle p {
+    font-size: 18px;
+  }
+
+  /* line 654, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .download-desc {
+    width: 57%;
+  }
+
+  /* line 657, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .testimonials p {
+    font-size: 24px;
+  }
+
+  /* line 660, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .testimonials h3 {
+    margin: 1.5em 0;
+  }
+
+  /* line 663, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .dc-head-icon {
+    margin-bottom: 0;
+  }
+
+  /* line 666, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .features-list {
+    margin-top: 0;
+  }
+
+  /* line 669, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .features h2 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 640px) {
+  /* line 674, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .wrap {
+    width: 90%;
+  }
+
+  /* line 677, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner {
+    margin: 1em 0 0 0;
+  }
+
+  /* line 680, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info {
+    margin-top: 0;
+  }
+
+  /* line 683, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info h1 {
+    font-size: 2em;
+  }
+
+  /* line 686, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info {
+    width: 65%;
+  }
+
+  /* line 689, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info h3 {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 10px 0;
+  }
+
+  /* line 694, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .features p {
+    font-size: 16px;
+  }
+
+  /* line 697, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle {
+    background-size: 125%;
+  }
+
+  /* line 700, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .testimonials p {
+    font-size: 18px;
+  }
+
+  /* line 703, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .testimonials h3 {
+    margin: 1em 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 708, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .wrap {
+    width: 95%;
+  }
+
+  /* line 711, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .header-top {
+    padding: 5px 0;
+  }
+
+  /* line 714, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .logo {
+    float: none;
+    margin: 0 auto;
+    width: 40%;
+  }
+
+  /* line 719, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .cssmenu {
+    float: none;
+    text-align: center;
+  }
+
+  /* line 723, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 727, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-pic {
+    display: none;
+  }
+
+  /* line 730, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner {
+    margin: 0;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+
+  /* line 735, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .features h2 {
+    font-size: 2em;
+  }
+
+  /* line 738, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .download-desc {
+    width: 100%;
+  }
+
+  /* line 741, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle {
+    background-size: 135%;
+  }
+
+  /* line 744, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle p {
+    font-weight: normal;
+  }
+}
+@media (max-width: 320px) {
+  /* line 749, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .wrap {
+    width: 95%;
+  }
+
+  /* line 752, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .cssmenu > ul > li > a {
+    padding: 12px 2px 12px 2px;
+    font-size: 11px;
+  }
+
+  /* line 756, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .features p, .testimonials p {
+    font-size: 15px;
+  }
+
+  /* line 759, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .testimonials h3 {
+    margin: .5em 0;
+  }
+
+  /* line 762, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle h2 {
+    font-size: 1.5em;
+  }
+
+  /* line 765, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle p {
+    font-size: 15px;
+  }
+
+  /* line 768, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .content-middle {
+    background-size: 180%;
+  }
+
+  /* line 771, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info h1 {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  /* line 775, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .img-banner-info h3 {
+    display: none;
+  }
+
+  /* line 778, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+  .app-btn a {
+    font-size: 13px;
+  }
+}
+/* line 785, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+input.radio {
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+/* line 789, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+input.check_boxes {
+  margin-left: 3px;
+  vertical-align: -3px;
+}
+
+/* line 795, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+label.collection_check_boxes {
+  float: none;
+  margin: 0;
+  vertical-align: -2px;
+  margin-left: 2px;
+}
+
+/* line 804, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.panel-transparent {
+  background: none;
+}
+
+/* line 808, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.panel-transparent .panel-heading {
+  background: rgba(122, 130, 136, 0.2) !important;
+}
+
+/* line 812, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.panel-transparent .panel-body {
+  background: rgba(46, 51, 56, 0.2) !important;
+}
+
+/* line 816, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.panel-body > h1 {
+  color: #FFFFFF;
+  padding: 12px 15px 12px 15px;
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  font-size: 40px;
+}
+
+/* line 825, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.panel-body > p {
+  color: #FFFFFF;
+  padding: 12px 15px 12px 15px;
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  font-size: 20px;
+}
+
+/* line 833, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+div.header-find {
+  height: 50%;
+}
+
+/* line 837, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.buttonHolder {
+  text-align: center;
+}
+
+/* line 839, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.findanything-wrapper {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+/* line 842, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.findanything-title {
+  color: #8e8e8e;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.42857;
+}
+
+/* line 847, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.findanything-subtitle {
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  margin-bottom: 10px;
+}
+
+/* resets */
+/* line 857, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* line 862, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 868, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+body {
+  box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+/* line 873, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+body *, body *:before, body *:after {
+  box-sizing: inherit;
+}
+
+/* line 876, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.event-timeline-custome-queries {
+  font-size: 1.6rem;
+  font-family: "Fira Sans", sans-serif;
+  color: #383838;
+  background-color: #f8f8f8;
+}
+
+/* line 884, /Users/gaurav/AcquireTech/shopick/app/assets/stylesheets/style.scss */
+.search-box {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 60px 0 20px;
+  background-color: rgba(77, 74, 74, 0.5);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-size: 1.6em;
+}

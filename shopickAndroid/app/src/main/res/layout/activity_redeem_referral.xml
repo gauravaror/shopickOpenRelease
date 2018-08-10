@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_phonenumber"
+    android:fitsSystemWindows="true"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:background="@color/theme_primary"
+        android:titleTextColor="@color/material_white"
+        android:title="@string/app_name"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:layout_collapseMode="pin"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            style="@style/CategoryItem.Title"
+            android:textSize="20dp"
+            android:maxLines="5"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="@string/redeem_text"/>
+
+        <EditText
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:hint="@string/redeem_text"
+            android:ems="10"
+            android:id="@+id/editText_redeem" />
+
+        <Button
+            android:layout_margin="30dp"
+            android:id="@+id/redeem_referral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/redeem"/>
+    </LinearLayout>
+</LinearLayout>
